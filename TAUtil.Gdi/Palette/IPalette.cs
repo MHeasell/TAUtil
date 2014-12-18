@@ -10,5 +10,7 @@
         Color this[int index] { get; }
 
         int LookUp(Color color);
+
+        int GetNearest(Color color);
     }
 }

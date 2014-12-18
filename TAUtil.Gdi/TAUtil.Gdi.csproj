@@ -51,6 +51,7 @@
     <Compile Include="Palette\BinaryPaletteReader.cs" />
     <Compile Include="Palette\IPalette.cs" />
     <Compile Include="Palette\PaletteFactory.cs" />
+    <Compile Include="Palette\Quantization.cs" />
     <Compile Include="Palette\TransparencyMaskedPalette.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>

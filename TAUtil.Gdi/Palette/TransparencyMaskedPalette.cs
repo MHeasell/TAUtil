@@ -37,6 +37,11 @@
             return color == Color.Transparent ? this.TransparencyIndex : this.palette.LookUp(color);
         }
 
+        public int GetNearest(Color color)
+        {
+            return color == Color.Transparent ? this.TransparencyIndex : this.palette.GetNearest(color);
+        }
+
         public IEnumerator<Color> GetEnumerator()
         {
             for (int i = 0; i < this.Count; i++)
