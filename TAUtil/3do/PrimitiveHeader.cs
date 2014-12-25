@@ -2,7 +2,7 @@
 {
     using System.IO;
 
-    public struct PrimitiveHeader
+    internal struct PrimitiveHeader
     {
         public const int Length = 32;
 

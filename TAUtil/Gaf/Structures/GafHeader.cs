@@ -2,7 +2,7 @@
 {
     using System.IO;
 
-    public struct GafHeader
+    internal struct GafHeader
     {
         /// <summary>
         /// Version stamp - always 0x00010100

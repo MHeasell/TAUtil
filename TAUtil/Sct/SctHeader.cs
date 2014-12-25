@@ -2,7 +2,7 @@
 {
     using System.IO;
 
-    public struct SctHeader
+    internal struct SctHeader
     {
         /// <summary>
         /// Length of the header in bytes.

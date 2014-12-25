@@ -2,7 +2,7 @@
 {
     using System.IO;
 
-    public class TdfLexingReader : TextReader
+    internal class TdfLexingReader : TextReader
     {
         private readonly TextReader reader;
 

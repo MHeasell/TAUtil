@@ -2,7 +2,7 @@
 {
     using System.IO;
 
-    public struct ObjectHeader
+    internal struct ObjectHeader
     {
         /// <summary>
         /// This is field is always one.

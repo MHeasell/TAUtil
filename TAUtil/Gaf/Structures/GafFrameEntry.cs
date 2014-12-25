@@ -2,7 +2,7 @@
 {
     using System.IO;
 
-    public struct GafFrameEntry
+    internal struct GafFrameEntry
     {
         /// <summary>
         /// Pointer to frame table

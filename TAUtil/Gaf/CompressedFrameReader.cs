@@ -3,7 +3,7 @@
     using System;
     using System.IO;
 
-    public class CompressedFrameReader
+    internal class CompressedFrameReader
     {
         private readonly BinaryReader reader;
 

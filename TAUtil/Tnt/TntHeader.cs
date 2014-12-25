@@ -2,7 +2,7 @@
 {
     using System.IO;
 
-    public struct TntHeader
+    internal struct TntHeader
     {
         public const uint TntMagicNumber = 0x2000;
         public const int HeaderLength = 0x40;

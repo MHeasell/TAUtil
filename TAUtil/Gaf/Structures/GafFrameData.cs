@@ -2,7 +2,7 @@
 {
     using System.IO;
 
-    public struct GafFrameData
+    internal struct GafFrameData
     {
         public ushort Width;
         public ushort Height;

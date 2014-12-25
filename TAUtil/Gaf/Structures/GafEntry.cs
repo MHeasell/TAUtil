@@ -2,7 +2,7 @@
 {
     using System.IO;
 
-    public struct GafEntry
+    internal struct GafEntry
     {
         public ushort Frames;
         public ushort Unknown1;
