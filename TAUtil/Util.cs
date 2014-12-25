@@ -5,7 +5,7 @@
 
     using TAUtil.Tnt;
 
-    public static class Util
+    internal static class Util
     {
         public static string ConvertChars(byte[] data)
         {
