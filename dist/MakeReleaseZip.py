@@ -27,8 +27,10 @@ dist_files = [
         join(bindir, "HPIUtil.dll"),
         join(bindir, "TAUtil.dll"),
         join(bindir, "TAUtil.pdb"),
+        join(bindir, "TAUtil.xml"),
         join(bindir, "TAUtil.Gdi.dll"),
         join(bindir, "TAUtil.Gdi.pdb"),
+        join(bindir, "TAUtil.Gdi.xml"),
         join(slndir, "LICENSE"),
         join(slndir, "README.md"),
     ]
