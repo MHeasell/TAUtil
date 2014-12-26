@@ -6,7 +6,7 @@
 
     public class TdfNode
     {
-        public const int IndentationLevel = 4;
+        private const int IndentationLevel = 4;
 
         public TdfNode()
             : this(null)
