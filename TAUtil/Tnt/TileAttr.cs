@@ -32,7 +32,7 @@
         /// </summary>
         public byte Pad1;
 
-        public static TileAttr Read(BinaryReader b)
+        internal static TileAttr Read(BinaryReader b)
         {
             TileAttr attr;
             attr.Height = b.ReadByte();
@@ -41,7 +41,7 @@
             return attr;
         }
 
-        public static TileAttr ReadFromSct(Stream file, int version)
+        internal static TileAttr ReadFromSct(Stream file, int version)
         {
             return ReadFromSct(new BinaryReader(file), version);
         }
@@ -49,7 +49,7 @@
         /// <param name="reader"></param>
         /// <param name="version">The SCT format version. Valid versions are 2 and 3.</param>
         /// <returns></returns>
-        public static TileAttr ReadFromSct(BinaryReader reader, int version)
+        internal static TileAttr ReadFromSct(BinaryReader reader, int version)
         {
             TileAttr a;
             a.Height = reader.ReadByte();
@@ -67,14 +67,14 @@
             return a;
         }
 
-        public void Write(BinaryWriter b)
+        internal void Write(BinaryWriter b)
         {
             b.Write(this.Height);
             b.Write(this.Feature);
             b.Write(this.Pad1);
         }
 
-        public void WriteToSct(BinaryWriter b, int version)
+        internal void WriteToSct(BinaryWriter b, int version)
         {
             b.Write(this.Height);
             b.Write((short)0); // padding
