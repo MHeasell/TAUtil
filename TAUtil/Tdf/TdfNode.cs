@@ -46,7 +46,7 @@
             wr.Flush();
         }
 
-        protected void WriteTdf(StreamWriter writer, int depth)
+        private void WriteTdf(StreamWriter writer, int depth)
         {
             string indent = new string(' ', depth * TdfNode.IndentationLevel);
             string indent2 = new string(' ', (depth + 1) * TdfNode.IndentationLevel);
