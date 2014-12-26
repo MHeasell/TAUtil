@@ -10,12 +10,12 @@
 
         public int Z;
 
-        public static void Read(Stream s, ref Vector v)
+        internal static void Read(Stream s, ref Vector v)
         {
             Read(new BinaryReader(s), ref v);
         }
 
-        public static void Read(BinaryReader b, ref Vector v)
+        internal static void Read(BinaryReader b, ref Vector v)
         {
             v.X = b.ReadInt32();
             v.Y = b.ReadInt32();
