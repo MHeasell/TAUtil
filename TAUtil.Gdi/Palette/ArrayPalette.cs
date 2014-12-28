@@ -78,7 +78,7 @@
             return this.GetEnumerator();
         }
 
-        public static int DistanceSquared(Color c1, Color c2)
+        private static int DistanceSquared(Color c1, Color c2)
         {
             int dr = c2.R - c1.R;
             int dg = c2.G - c1.G;
