@@ -57,7 +57,7 @@
             return newData;
         }
 
-        public struct Size
+        internal struct Size
         {
             public Size(int width, int height)
                 : this()
