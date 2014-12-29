@@ -4,15 +4,27 @@
     using System.Collections.Generic;
     using System.IO;
 
+    /// <summary>
+    /// Tree structure representing a hierarchy of keys and values
+    /// as in a TDF format file.
+    /// </summary>
     public class TdfNode
     {
         private const int IndentationLevel = 4;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TdfNode"/> class.
+        /// The created node has a name of null.
+        /// </summary>
         public TdfNode()
             : this(null)
         {
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TdfNode"/> class.
+        /// </summary>
+        /// <param name="name">The name of the node.</param>
         public TdfNode(string name)
         {
             this.Name = name;
@@ -20,17 +32,38 @@
             this.Entries = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
         }
 
+        /// <summary>
+        /// Gets or sets the name of the node.
+        /// </summary>
         public string Name { get; set; }
 
+        /// <summary>
+        /// Gets the mapping of keys in this node.
+        /// Each key maps to a TdfNode with the same name representing a child block.
+        /// </summary>
         public Dictionary<string, TdfNode> Keys { get; private set; }
 
+        /// <summary>
+        /// Gets the mapping of entries in this node.
+        /// Each item is a property with a name and associated value.
+        /// </summary>
         public Dictionary<string, string> Entries { get; private set; }
 
+        /// <summary>
+        /// Reads a TDF file from the given stream into a TdfNode.
+        /// </summary>
+        /// <param name="s">The stream to read from.</param>
+        /// <returns>A TdfNode containing the read data.</returns>
         public static TdfNode LoadTdf(Stream s)
         {
             return LoadTdf(new StreamReader(s));
         }
 
+        /// <summary>
+        /// Reads a TDF file from the given reader into a TdfNode.
+        /// </summary>
+        /// <param name="reader">The reader to read from.</param>
+        /// <returns>A TdfNode containing the read data.</returns>
         public static TdfNode LoadTdf(TextReader reader)
         {
             var adapter = new TdfNodeAdapter();
@@ -39,6 +72,11 @@
             return adapter.RootNode;
         }
 
+        /// <summary>
+        /// Writes the contents of this TdfNode to the given stream
+        /// in TDF format.
+        /// </summary>
+        /// <param name="s">The stream to write to.</param>
         public void WriteTdf(Stream s)
         {
             StreamWriter wr = new StreamWriter(s);

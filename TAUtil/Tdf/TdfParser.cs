@@ -6,6 +6,9 @@
     using System.Text;
     using System.Text.RegularExpressions;
 
+    /// <summary>
+    /// Class for parsing TDF format files.
+    /// </summary>
     public class TdfParser
     {
         private const int EofSignal = -1;
@@ -14,17 +17,30 @@
 
         private readonly ITdfNodeAdapter adapter;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TdfParser"/> class.
+        /// </summary>
+        /// <param name="s">The stream to read from.</param>
+        /// <param name="adapter">The object to pass parsed data to.</param>
         public TdfParser(Stream s, ITdfNodeAdapter adapter)
             : this(new StreamReader(s), adapter)
         {
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TdfParser"/> class.
+        /// </summary>
+        /// <param name="reader">The reader to read from.</param>
+        /// <param name="adapter">The object to pass parsed data to.</param>
         public TdfParser(TextReader reader, ITdfNodeAdapter adapter)
         {
             this.reader = new TdfLexingReader(reader);
             this.adapter = adapter;
         }
 
+        /// <summary>
+        /// Gets the line number of the line that the parser is currently reading.
+        /// </summary>
         public int CurrentLine
         {
             get
@@ -33,6 +49,9 @@
             }
         }
 
+        /// <summary>
+        /// Gets the column number of the character that the parser is currently reading.
+        /// </summary>
         public int CurrentColumn
         {
             get
@@ -41,6 +60,9 @@
             }
         }
 
+        /// <summary>
+        /// Reads and parses the input.
+        /// </summary>
         public void Load()
         {
             this.adapter.Initialize(this);

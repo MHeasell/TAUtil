@@ -5,12 +5,12 @@
     internal struct GafFrameEntry
     {
         /// <summary>
-        /// Pointer to frame table
+        /// Pointer to frame table.
         /// </summary>
         public uint PtrFrameTable;
 
         /// <summary>
-        /// Unknown - varies
+        /// Unknown - varies.
         /// </summary>
         public uint Unknown1;
 

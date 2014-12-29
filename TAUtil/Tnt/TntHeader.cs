@@ -26,25 +26,28 @@
         public uint Height;
 
         /// <summary>
-        /// Offest from the beginning of the file to the tile indicies array.
+        /// Offset from the beginning of the file to the tile indices array.
         /// This array contains unsigned shorts
-        /// that are the indicies in the tile array
+        /// that are the indices in the tile array
         /// of the 32x32 pixel tile to be displayed at that point.
         /// </summary>
         public uint PtrMapData;
 
         /// <summary>
+        /// <para>
         /// Offset from the beginning of the file to the map attributes array.
         /// This array holds the height and feature information
         /// for every 16x16 pixel square on the map.
-        /// 
+        /// </para>
+        /// <para>
         /// NB: There are 4 of these squares for each square
-        /// in the tile indicies array.
+        /// in the tile indices array.
+        /// </para>
         /// </summary>
         public uint PtrMapAttr;
 
         /// <summary>
-        /// This is the array of tiles referenced by the tile indicies array.
+        /// This is the array of tiles referenced by the tile indices array.
         /// One tile consists of unsigned char[32*32].
         /// </summary>
         public uint PtrTileGfx;
@@ -55,22 +58,25 @@
         public uint Tiles;
 
         /// <summary>
-        /// The length of the array of tile anims (features).
+        /// The length of the array of tile animations (features).
         /// i.e. the number of features.
         /// </summary>
         public uint TileAnims;
 
         /// <summary>
-        /// This is the array of features referenced by the feature indicies array.
+        /// <para>
+        /// This is the array of features referenced by the feature indices array.
         /// Each entry is 0x84 bytes long and consists of an unsigned long
         /// that always seems to equal the index of the feature in this array
         /// and a 128-character null-terminated string
         /// that contains the name of the feature to be placed in the location
         /// as found between the square brackets "[]" in a TDF feature file.
-        /// 
+        /// </para>
+        /// <para>
         /// NB: The index seems to be totally useless.
         /// I have noticed that while Cavedog maps include them,
         /// Annihilator doesn't even bother to include them.
+        /// </para>
         /// </summary>
         public uint PtrTileAnims;
 
@@ -94,31 +100,31 @@
 
         /// <summary>
         /// No-one knows what this is used for.
-        /// Maybe it has to do with multiple-of-4 or power-of-2 sizes again?
+        /// It may have to do with multiple-of-4 or power-of-2 sizes.
         /// </summary>
         public uint Unknown1;
 
         /// <summary>
         /// No-one knows what this is used for.
-        /// Maybe it has to do with multiple-of-4 or power-of-2 sizes again?
+        /// It may have to do with multiple-of-4 or power-of-2 sizes.
         /// </summary>
         public uint Pad1;
 
         /// <summary>
         /// No-one knows what this is used for.
-        /// Maybe it has to do with multiple-of-4 or power-of-2 sizes again?
+        /// It may have to do with multiple-of-4 or power-of-2 sizes.
         /// </summary>
         public uint Pad2;
 
         /// <summary>
         /// No-one knows what this is used for.
-        /// Maybe it has to do with multiple-of-4 or power-of-2 sizes again?
+        /// It may have to do with multiple-of-4 or power-of-2 sizes.
         /// </summary>
         public uint Pad3;
 
         /// <summary>
         /// No-one knows what this is used for.
-        /// Maybe it has to do with multiple-of-4 or power-of-2 sizes again?
+        /// It may have to do with multiple-of-4 or power-of-2 sizes.
         /// </summary>
         public uint Pad4;
 

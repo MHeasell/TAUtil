@@ -4,11 +4,14 @@
     using System.IO;
 
     /// <summary>
-    /// This class represents an unamanged memory stream with unbounded length(!).
+    /// <para>
+    /// This class represents an unmanaged memory stream with unbounded length(!).
     /// This stream doesn't know how long it is, so it's trivial to read
     /// over the end of the buffer and land in unknown memory.
-    /// 
-    /// Very dangerous! Use with caution!
+    /// </para>
+    /// <para>
+    /// Very dangerous! Use with caution.
+    /// </para>
     /// </summary>
     internal unsafe sealed class HpiStream : Stream
     {

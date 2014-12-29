@@ -5,20 +5,36 @@
 
     using TAUtil.Tnt;
 
+    /// <summary>
+    /// Class for writing SCT format files to a stream.
+    /// </summary>
     public class SctWriter : IDisposable
     {
         private readonly BinaryWriter writer;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SctWriter"/> class.
+        /// </summary>
+        /// <param name="s">The stream to write to.</param>
         public SctWriter(Stream s)
             : this(new BinaryWriter(s))
         {
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SctWriter"/> class.
+        /// </summary>
+        /// <param name="writer">The writer to write to.</param>
         public SctWriter(BinaryWriter writer)
         {
             this.writer = writer;
         }
 
+        /// <summary>
+        /// Writes a SCT format file to the stream
+        /// using data from the provided SCT source adapter.
+        /// </summary>
+        /// <param name="adapter">The object to write to the stream.</param>
         public void WriteSct(ISctSource adapter)
         {
             SctHeader h = new SctHeader();
@@ -49,12 +65,24 @@
             this.WriteMinimap(adapter);
         }
 
+        /// <summary>
+        /// Disposes the object.
+        /// See <see cref="IDisposable.Dispose"/>.
+        /// </summary>
         public void Dispose()
         {
             this.Dispose(true);
             GC.SuppressFinalize(this);
         }
 
+        /// <summary>
+        /// Disposes this object.
+        /// </summary>
+        /// <param name="disposing">
+        /// Indicates whether to dispose of managed resources.
+        /// This should be true when explicitly disposing
+        /// and false when being disposed due to garbage collection.
+        /// </param>
         protected virtual void Dispose(bool disposing)
         {
             if (disposing)

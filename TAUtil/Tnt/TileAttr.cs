@@ -2,27 +2,61 @@
 {
     using System.IO;
 
+    /// <summary>
+    /// Data structure holding attribute information
+    /// for a single tile attribute cell.
+    /// </summary>
     public struct TileAttr
     {
+        /// <summary>
+        /// The feature value representing no feature.
+        /// </summary>
         public const ushort FeatureNone = 0xFFFF;
+
+        /// <summary>
+        /// The feature value representing a void cell.
+        /// </summary>
         public const ushort FeatureVoid = 0xFFFC;
+
+        /// <summary>
+        /// Feature value present in some maps.
+        /// Its purpose is unknown.
+        /// </summary>
         public const ushort FeatureUnknown = 0xFFFE;
+
+        /// <summary>
+        /// The length of an attribute structure in bytes in a TNT file.
+        /// </summary>
         public const int AttrLength = 4;
+
+        /// <summary>
+        /// The length of an attribute structure in bytes in a version 2 SCT file.
+        /// </summary>
         public const int SctVersion2AttrLength = 8;
+
+        /// <summary>
+        /// The length of an attribute structure in bytes in a version 3 SCT file.
+        /// </summary>
         public const int SctVersion3AttrLength = 4;
 
+        /// <summary>
+        /// The height at this point.
+        /// </summary>
         public byte Height;
 
         /// <summary>
+        /// <para>
         /// Offset in the feature array
         /// of the feature located in this square.
-        /// 
+        /// </para>
+        /// <para>
         /// 0xFFFF if none,
         /// 0xFFFC (-4) if void.
         /// I've also seen 0xFFFE (-2) on some of the early Cavedog maps
         /// such as Lava Run and AC02,
         /// but have no idea what it means.
-        /// Please contact me if you have any information!
+        /// Please contact me if you have any information.
+        /// </para>
         /// </summary>
         public ushort Feature;
 
@@ -46,9 +80,10 @@
             return ReadFromSct(new BinaryReader(file), version);
         }
 
-        /// <param name="reader"></param>
+        /// <summary>Reads a tile attribute from a SCT format source.</summary>
+        /// <param name="reader">The reader to read from.</param>
         /// <param name="version">The SCT format version. Valid versions are 2 and 3.</param>
-        /// <returns></returns>
+        /// <returns>The attribute data that was read.</returns>
         internal static TileAttr ReadFromSct(BinaryReader reader, int version)
         {
             TileAttr a;

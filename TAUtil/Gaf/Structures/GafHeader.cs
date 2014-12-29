@@ -5,17 +5,17 @@
     internal struct GafHeader
     {
         /// <summary>
-        /// Version stamp - always 0x00010100
+        /// Version stamp - always 0x00010100.
         /// </summary>
         public uint IdVersion;
 
         /// <summary>
-        /// Number of items contained in this file
+        /// Number of items contained in this file.
         /// </summary>
         public uint Entries;
 
         /// <summary>
-        /// Always 0
+        /// Purpose unknown. Always 0.
         /// </summary>
         public uint Unknown1;
 

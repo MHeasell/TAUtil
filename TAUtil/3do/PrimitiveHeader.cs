@@ -14,7 +14,8 @@
 
         /// <summary>
         /// The number of vertices used by the primitive.
-        /// (example: 1 = point, 2 = line, 3 = triangle, 4 = quad)
+        /// A primitive with one vertex is a point,
+        /// two a line, three a triangle, four a quad, and so on.
         /// </summary>
         public int VertexCount;
 
@@ -32,25 +33,25 @@
 
         /// <summary>
         /// The offset to a null terminated string
-        /// which indicates which texture to use for this primtive.
+        /// which indicates which texture to use for this primitive.
         /// A value of 0 probably means no texture.
         /// </summary>
         public int PtrTextureName;
 
         /// <summary>
-        /// Cavedog-specific used for their editor, not needed.
+        /// Used by Cavedog for their editor, not needed.
         /// Always set to 0 or ignore.
         /// </summary>
         public int Unknown1;
 
         /// <summary>
-        /// Cavedog-specific used for their editor, not needed.
+        /// Used by Cavedog for their editor, not needed.
         /// Always set to 0 or ignore.
         /// </summary>
         public int Unknown2;
 
         /// <summary>
-        /// Cavedog-specific used for their editor, not needed.
+        /// Used by Cavedog for their editor, not needed.
         /// Always set to 0 or ignore.
         /// </summary>
         public int Unknown3;

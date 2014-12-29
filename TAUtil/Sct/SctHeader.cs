@@ -42,7 +42,7 @@
         public uint Height;
 
         /// <summary>
-        /// Offest to the section's data.
+        /// Offset to the section's data.
         /// </summary>
         public uint PtrData;
 

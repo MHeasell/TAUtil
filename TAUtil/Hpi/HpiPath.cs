@@ -9,18 +9,24 @@
     /// </summary>
     public static class HpiPath
     {
+        /// <summary>
+        /// The character used in HPI path strings
+        /// to separate directories.
+        /// </summary>
         public static readonly char DirectorySeparatorChar = '\\';
 
+        /// <summary>
+        /// An alternative character used in HPI path strings
+        /// to separate directories.
+        /// </summary>
         public static readonly char AltDirectorySeparatorChar = '/';
 
         /// <summary>
         /// Returns the extension of the specified HPI path string.
         /// </summary>
-        ///
         /// <param name="path">
         /// The HPI path string from which to get the extension.
         /// </param>
-        ///
         /// <returns>
         /// The extension of the specified HPI path (including the period "."),
         /// or null, or string.Empty.
@@ -120,6 +126,9 @@
             return path;
         }
 
+        /// <summary>
+        /// Returns the directory information for the specified HPI path string.
+        /// </summary>
         /// <param name="path">
         /// The path of a file or directory in an HPI file.
         /// </param>
@@ -200,7 +209,7 @@
         /// Specify null to remove an existing extension from path. 
         /// </param>
         /// <returns>
-        /// if path is null or an empty string (""),
+        /// If path is null or an empty string (""),
         /// the path information is returned unmodified.
         /// If extension is null,
         /// the returned string contains the specified path

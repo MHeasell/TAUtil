@@ -3,23 +3,39 @@
     using System.IO;
     using System.Text;
 
+    /// <summary>
+    /// Class for reading 3DO format models.
+    /// </summary>
     public class ModelReader
     {
         private readonly IModelReaderAdapter adapter;
 
         private readonly BinaryReader reader;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ModelReader"/> class.
+        /// </summary>
+        /// <param name="s">The stream from which to read.</param>
+        /// <param name="adapter">The object to pass read data to.</param>
         public ModelReader(Stream s, IModelReaderAdapter adapter)
             : this(new BinaryReader(s), adapter)
         {
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ModelReader"/> class.
+        /// </summary>
+        /// <param name="r">The reader from which to read.</param>
+        /// <param name="adapter">The object to pass read data to.</param>
         public ModelReader(BinaryReader r, IModelReaderAdapter adapter)
         {
             this.adapter = adapter;
             this.reader = r;
         }
 
+        /// <summary>
+        /// Reads the 3DO model from the stream.
+        /// </summary>
         public void Read()
         {
             var header = new ObjectHeader();

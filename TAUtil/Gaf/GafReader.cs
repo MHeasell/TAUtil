@@ -3,30 +3,52 @@
     using System;
     using System.IO;
 
+    /// <summary>
+    /// Class for reading GAF format files.
+    /// </summary>
     public class GafReader : IDisposable
     {
         private readonly BinaryReader reader;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GafReader"/> class.
+        /// </summary>
+        /// <param name="filename">The path of the GAF file to read.</param>
         public GafReader(string filename)
             : this(File.OpenRead(filename))
         {
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GafReader"/> class.
+        /// </summary>
+        /// <param name="s">The stream to read from.</param>
         public GafReader(Stream s)
             : this(new BinaryReader(s))
         {
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GafReader"/> class.
+        /// </summary>
+        /// <param name="reader">The reader to read from.</param>
         public GafReader(BinaryReader reader)
         {
             this.reader = reader;
         }
 
+        /// <summary>
+        /// Finalizes an instance of the <see cref="GafReader"/> class.
+        /// </summary>
         ~GafReader()
         {
             this.Dispose(false);
         }
 
+        /// <summary>
+        /// Reads the GAF data from the input stream.
+        /// </summary>
+        /// <returns>The read GAF data.</returns>
         public GafEntry[] Read()
         {
             // read in header
@@ -51,12 +73,24 @@
             return entries;
         }
 
+        /// <summary>
+        /// Disposes the object.
+        /// See <see cref="IDisposable.Dispose"/>.
+        /// </summary>
         public void Dispose()
         {
             this.Dispose(true);
             GC.SuppressFinalize(this);
         }
 
+        /// <summary>
+        /// Disposes the object.
+        /// </summary>
+        /// <param name="disposing">
+        /// Indicates whether to dispose of managed resources.
+        /// This should be true when explicitly disposing
+        /// and false when being disposed due to garbage collection.
+        /// </param>
         protected virtual void Dispose(bool disposing)
         {
             if (disposing)
