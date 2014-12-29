@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AddFile method" Url="html/M_TAUtil_Hpi_HpiWriter_AddFile.htm" />
+  <HelpKINode Title="AddPrimitive method" Url="html/M_TAUtil__3do_IModelReaderAdapter_AddPrimitive.htm" />
+  <HelpKINode Title="AddProperty method">
+    <HelpKINode Title="ITdfNodeAdapter.AddProperty Method " Url="html/M_TAUtil_Tdf_ITdfNodeAdapter_AddProperty.htm" />
+    <HelpKINode Title="TdfNodeAdapter.AddProperty Method " Url="html/M_TAUtil_Tdf_TdfNodeAdapter_AddProperty.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddVertex method" Url="html/M_TAUtil__3do_IModelReaderAdapter_AddVertex.htm" />
+  <HelpKINode Title="AltDirectorySeparatorChar field" Url="html/F_TAUtil_Hpi_HpiPath_AltDirectorySeparatorChar.htm" />
+  <HelpKINode Title="AnimCount property">
+    <HelpKINode Title="ITntSource.AnimCount Property " Url="html/P_TAUtil_Tnt_ITntSource_AnimCount.htm" />
+    <HelpKINode Title="TntReader.AnimCount Property " Url="html/P_TAUtil_Tnt_TntReader_AnimCount.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AnimNameLength field" Url="html/F_TAUtil_Tnt_TntConstants_AnimNameLength.htm" />
+  <HelpKINode Title="ArrayPalette class">
+    <HelpKINode Title="ArrayPalette Class" Url="html/T_TAUtil_Gdi_Palette_ArrayPalette.htm" />
+    <HelpKINode Title="about ArrayPalette class" Url="html/T_TAUtil_Gdi_Palette_ArrayPalette.htm" />
+    <HelpKINode Title="constructor" Url="html/M_TAUtil_Gdi_Palette_ArrayPalette__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Gdi_Palette_ArrayPalette.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Gdi_Palette_ArrayPalette.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ArrayPalette.ArrayPalette constructor" Url="html/M_TAUtil_Gdi_Palette_ArrayPalette__ctor.htm" />
+  <HelpKINode Title="ArrayPalette.Count property" Url="html/P_TAUtil_Gdi_Palette_ArrayPalette_Count.htm" />
+  <HelpKINode Title="ArrayPalette.GetEnumerator method" Url="html/M_TAUtil_Gdi_Palette_ArrayPalette_GetEnumerator.htm" />
+  <HelpKINode Title="ArrayPalette.GetNearest method" Url="html/M_TAUtil_Gdi_Palette_ArrayPalette_GetNearest.htm" />
+  <HelpKINode Title="ArrayPalette.Item property" Url="html/P_TAUtil_Gdi_Palette_ArrayPalette_Item.htm" />
+  <HelpKINode Title="ArrayPalette.LookUp method" Url="html/M_TAUtil_Gdi_Palette_ArrayPalette_LookUp.htm" />
+  <HelpKINode Title="AttrLength field" Url="html/F_TAUtil_Tnt_TileAttr_AttrLength.htm" />
+  <HelpKINode Title="BackToParent method" Url="html/M_TAUtil__3do_IModelReaderAdapter_BackToParent.htm" />
+  <HelpKINode Title="BeginBlock method">
+    <HelpKINode Title="ITdfNodeAdapter.BeginBlock Method " Url="html/M_TAUtil_Tdf_ITdfNodeAdapter_BeginBlock.htm" />
+    <HelpKINode Title="TdfNodeAdapter.BeginBlock Method " Url="html/M_TAUtil_Tdf_TdfNodeAdapter_BeginBlock.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BinaryPaletteReader class">
+    <HelpKINode Title="BinaryPaletteReader Class" Url="html/T_TAUtil_Gdi_Palette_BinaryPaletteReader.htm" />
+    <HelpKINode Title="about BinaryPaletteReader class" Url="html/T_TAUtil_Gdi_Palette_BinaryPaletteReader.htm" />
+    <HelpKINode Title="constructor" Url="html/M_TAUtil_Gdi_Palette_BinaryPaletteReader__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Gdi_Palette_BinaryPaletteReader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BinaryPaletteReader.BinaryPaletteReader constructor" Url="html/M_TAUtil_Gdi_Palette_BinaryPaletteReader__ctor.htm" />
+  <HelpKINode Title="BinaryPaletteReader.Dispose method" Url="html/Overload_TAUtil_Gdi_Palette_BinaryPaletteReader_Dispose.htm" />
+  <HelpKINode Title="BinaryPaletteReader.ReadColor method" Url="html/M_TAUtil_Gdi_Palette_BinaryPaletteReader_ReadColor.htm" />
+  <HelpKINode Title="BitmapConvert class">
+    <HelpKINode Title="BitmapConvert Class" Url="html/T_TAUtil_Gdi_Bitmap_BitmapConvert.htm" />
+    <HelpKINode Title="about BitmapConvert class" Url="html/T_TAUtil_Gdi_Bitmap_BitmapConvert.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Gdi_Bitmap_BitmapConvert.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BitmapConvert.ToBitmap method" Url="html/Overload_TAUtil_Gdi_Bitmap_BitmapConvert_ToBitmap.htm" />
+  <HelpKINode Title="BitmapConvert.ToBytes method" Url="html/Overload_TAUtil_Gdi_Bitmap_BitmapConvert_ToBytes.htm" />
+  <HelpKINode Title="BitmapConvert.ToStream method" Url="html/Overload_TAUtil_Gdi_Bitmap_BitmapConvert_ToStream.htm" />
+  <HelpKINode Title="BitmapDeserializer class">
+    <HelpKINode Title="BitmapDeserializer Class" Url="html/T_TAUtil_Gdi_Bitmap_BitmapDeserializer.htm" />
+    <HelpKINode Title="about BitmapDeserializer class" Url="html/T_TAUtil_Gdi_Bitmap_BitmapDeserializer.htm" />
+    <HelpKINode Title="constructor" Url="html/M_TAUtil_Gdi_Bitmap_BitmapDeserializer__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Gdi_Bitmap_BitmapDeserializer.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BitmapDeserializer.BitmapDeserializer constructor" Url="html/M_TAUtil_Gdi_Bitmap_BitmapDeserializer__ctor.htm" />
+  <HelpKINode Title="BitmapDeserializer.Deserialize method" Url="html/Overload_TAUtil_Gdi_Bitmap_BitmapDeserializer_Deserialize.htm" />
+  <HelpKINode Title="BitmapSerializer class">
+    <HelpKINode Title="BitmapSerializer Class" Url="html/T_TAUtil_Gdi_Bitmap_BitmapSerializer.htm" />
+    <HelpKINode Title="about BitmapSerializer class" Url="html/T_TAUtil_Gdi_Bitmap_BitmapSerializer.htm" />
+    <HelpKINode Title="constructor" Url="html/M_TAUtil_Gdi_Bitmap_BitmapSerializer__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Gdi_Bitmap_BitmapSerializer.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BitmapSerializer.BitmapSerializer constructor" Url="html/M_TAUtil_Gdi_Bitmap_BitmapSerializer__ctor.htm" />
+  <HelpKINode Title="BitmapSerializer.Serialize method" Url="html/M_TAUtil_Gdi_Bitmap_BitmapSerializer_Serialize.htm" />
+  <HelpKINode Title="BitmapSerializer.ToBytes method" Url="html/M_TAUtil_Gdi_Bitmap_BitmapSerializer_ToBytes.htm" />
+  <HelpKINode Title="ChangeExtension method" Url="html/M_TAUtil_Hpi_HpiPath_ChangeExtension.htm" />
+  <HelpKINode Title="Close method">
+    <HelpKINode Title="HpiReader.Close Method " Url="html/M_TAUtil_Hpi_HpiReader_Close.htm" />
+    <HelpKINode Title="HpiWriter.Close Method " Url="html/M_TAUtil_Hpi_HpiWriter_Close.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ColumnNumber property" Url="html/P_TAUtil_TdfParseException_ColumnNumber.htm" />
+  <HelpKINode Title="Combine method" Url="html/M_TAUtil_Hpi_HpiPath_Combine.htm" />
+  <HelpKINode Title="Count property">
+    <HelpKINode Title="ArrayPalette.Count Property " Url="html/P_TAUtil_Gdi_Palette_ArrayPalette_Count.htm" />
+    <HelpKINode Title="IPalette.Count Property " Url="html/P_TAUtil_Gdi_Palette_IPalette_Count.htm" />
+    <HelpKINode Title="TransparencyMaskedPalette.Count Property " Url="html/P_TAUtil_Gdi_Palette_TransparencyMaskedPalette_Count.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateChild method" Url="html/M_TAUtil__3do_IModelReaderAdapter_CreateChild.htm" />
+  <HelpKINode Title="CreateDirectory method" Url="html/M_TAUtil_Hpi_HpiWriter_CreateDirectory.htm" />
+  <HelpKINode Title="CurrentColumn property" Url="html/P_TAUtil_Tdf_TdfParser_CurrentColumn.htm" />
+  <HelpKINode Title="CurrentLine property" Url="html/P_TAUtil_Tdf_TdfParser_CurrentLine.htm" />
+  <HelpKINode Title="Data field" Url="html/F_TAUtil_Gaf_GafFrame_Data.htm" />
+  <HelpKINode Title="Data property" Url="html/P_TAUtil_Tnt_MinimapInfo_Data.htm" />
+  <HelpKINode Title="DataHeight property">
+    <HelpKINode Title="ISctSource.DataHeight Property " Url="html/P_TAUtil_Sct_ISctSource_DataHeight.htm" />
+    <HelpKINode Title="ITntSource.DataHeight Property " Url="html/P_TAUtil_Tnt_ITntSource_DataHeight.htm" />
+    <HelpKINode Title="SctReader.DataHeight Property " Url="html/P_TAUtil_Sct_SctReader_DataHeight.htm" />
+    <HelpKINode Title="TntReader.DataHeight Property " Url="html/P_TAUtil_Tnt_TntReader_DataHeight.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataWidth property">
+    <HelpKINode Title="ISctSource.DataWidth Property " Url="html/P_TAUtil_Sct_ISctSource_DataWidth.htm" />
+    <HelpKINode Title="ITntSource.DataWidth Property " Url="html/P_TAUtil_Tnt_ITntSource_DataWidth.htm" />
+    <HelpKINode Title="SctReader.DataWidth Property " Url="html/P_TAUtil_Sct_SctReader_DataWidth.htm" />
+    <HelpKINode Title="TntReader.DataWidth Property " Url="html/P_TAUtil_Tnt_TntReader_DataWidth.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Deserialize method" Url="html/Overload_TAUtil_Gdi_Bitmap_BitmapDeserializer_Deserialize.htm" />
+  <HelpKINode Title="Directory enumeration member" Url="html/T_TAUtil_Hpi_HpiEntry_FileType.htm" />
+  <HelpKINode Title="DirectorySeparatorChar field" Url="html/F_TAUtil_Hpi_HpiPath_DirectorySeparatorChar.htm" />
+  <HelpKINode Title="Dispose method">
+    <HelpKINode Title="BinaryPaletteReader.Dispose Method " Url="html/Overload_TAUtil_Gdi_Palette_BinaryPaletteReader_Dispose.htm" />
+    <HelpKINode Title="GafReader.Dispose Method " Url="html/Overload_TAUtil_Gaf_GafReader_Dispose.htm" />
+    <HelpKINode Title="HpiReader.Dispose Method " Url="html/M_TAUtil_Hpi_HpiReader_Dispose.htm" />
+    <HelpKINode Title="HpiWriter.Dispose Method " Url="html/M_TAUtil_Hpi_HpiWriter_Dispose.htm" />
+    <HelpKINode Title="SctReader.Dispose Method " Url="html/Overload_TAUtil_Sct_SctReader_Dispose.htm" />
+    <HelpKINode Title="SctWriter.Dispose Method " Url="html/Overload_TAUtil_Sct_SctWriter_Dispose.htm" />
+    <HelpKINode Title="TntReader.Dispose Method " Url="html/Overload_TAUtil_Tnt_TntReader_Dispose.htm" />
+    <HelpKINode Title="TntWriter.Dispose Method " Url="html/Overload_TAUtil_Tnt_TntWriter_Dispose.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EndBlock method">
+    <HelpKINode Title="ITdfNodeAdapter.EndBlock Method " Url="html/M_TAUtil_Tdf_ITdfNodeAdapter_EndBlock.htm" />
+    <HelpKINode Title="TdfNodeAdapter.EndBlock Method " Url="html/M_TAUtil_Tdf_TdfNodeAdapter_EndBlock.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Entries property" Url="html/P_TAUtil_Tdf_TdfNode_Entries.htm" />
+  <HelpKINode Title="EnumerateAnims method">
+    <HelpKINode Title="ITntSource.EnumerateAnims Method " Url="html/M_TAUtil_Tnt_ITntSource_EnumerateAnims.htm" />
+    <HelpKINode Title="TntReader.EnumerateAnims Method " Url="html/M_TAUtil_Tnt_TntReader_EnumerateAnims.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EnumerateAttrs method">
+    <HelpKINode Title="ISctSource.EnumerateAttrs Method " Url="html/M_TAUtil_Sct_ISctSource_EnumerateAttrs.htm" />
+    <HelpKINode Title="ITntSource.EnumerateAttrs Method " Url="html/M_TAUtil_Tnt_ITntSource_EnumerateAttrs.htm" />
+    <HelpKINode Title="SctReader.EnumerateAttrs Method " Url="html/M_TAUtil_Sct_SctReader_EnumerateAttrs.htm" />
+    <HelpKINode Title="TntReader.EnumerateAttrs Method " Url="html/M_TAUtil_Tnt_TntReader_EnumerateAttrs.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EnumerateData method">
+    <HelpKINode Title="ISctSource.EnumerateData Method " Url="html/M_TAUtil_Sct_ISctSource_EnumerateData.htm" />
+    <HelpKINode Title="ITntSource.EnumerateData Method " Url="html/M_TAUtil_Tnt_ITntSource_EnumerateData.htm" />
+    <HelpKINode Title="SctReader.EnumerateData Method " Url="html/M_TAUtil_Sct_SctReader_EnumerateData.htm" />
+    <HelpKINode Title="TntReader.EnumerateData Method " Url="html/M_TAUtil_Tnt_TntReader_EnumerateData.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EnumerateTiles method">
+    <HelpKINode Title="ISctSource.EnumerateTiles Method " Url="html/M_TAUtil_Sct_ISctSource_EnumerateTiles.htm" />
+    <HelpKINode Title="ITntSource.EnumerateTiles Method " Url="html/M_TAUtil_Tnt_ITntSource_EnumerateTiles.htm" />
+    <HelpKINode Title="SctReader.EnumerateTiles Method " Url="html/M_TAUtil_Sct_SctReader_EnumerateTiles.htm" />
+    <HelpKINode Title="TntReader.EnumerateTiles Method " Url="html/M_TAUtil_Tnt_TntReader_EnumerateTiles.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExtractFile method" Url="html/M_TAUtil_Hpi_HpiReader_ExtractFile.htm" />
+  <HelpKINode Title="Feature field" Url="html/F_TAUtil_Tnt_TileAttr_Feature.htm" />
+  <HelpKINode Title="FeatureNone field" Url="html/F_TAUtil_Tnt_TileAttr_FeatureNone.htm" />
+  <HelpKINode Title="FeatureUnknown field" Url="html/F_TAUtil_Tnt_TileAttr_FeatureUnknown.htm" />
+  <HelpKINode Title="FeatureVoid field" Url="html/F_TAUtil_Tnt_TileAttr_FeatureVoid.htm" />
+  <HelpKINode Title="File enumeration member" Url="html/T_TAUtil_Hpi_HpiEntry_FileType.htm" />
+  <HelpKINode Title="FileName property" Url="html/P_TAUtil_Hpi_HpiReader_FileName.htm" />
+  <HelpKINode Title="Finalize method" Url="html/M_TAUtil_Gaf_GafReader_Finalize.htm" />
+  <HelpKINode Title="Frames property" Url="html/P_TAUtil_Gaf_GafEntry_Frames.htm" />
+  <HelpKINode Title="FromBinaryPal method" Url="html/M_TAUtil_Gdi_Palette_PaletteFactory_FromBinaryPal.htm" />
+  <HelpKINode Title="GafEntry class">
+    <HelpKINode Title="GafEntry Class" Url="html/T_TAUtil_Gaf_GafEntry.htm" />
+    <HelpKINode Title="about GafEntry class" Url="html/T_TAUtil_Gaf_GafEntry.htm" />
+    <HelpKINode Title="constructor" Url="html/M_TAUtil_Gaf_GafEntry__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Gaf_GafEntry.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Gaf_GafEntry.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GafEntry.Frames property" Url="html/P_TAUtil_Gaf_GafEntry_Frames.htm" />
+  <HelpKINode Title="GafEntry.GafEntry constructor" Url="html/M_TAUtil_Gaf_GafEntry__ctor.htm" />
+  <HelpKINode Title="GafEntry.Name property" Url="html/P_TAUtil_Gaf_GafEntry_Name.htm" />
+  <HelpKINode Title="GafFrame structure">
+    <HelpKINode Title="GafFrame Structure" Url="html/T_TAUtil_Gaf_GafFrame.htm" />
+    <HelpKINode Title="about GafFrame structure" Url="html/T_TAUtil_Gaf_GafFrame.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_TAUtil_Gaf_GafFrame.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Gaf_GafFrame.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GafFrame.Data field" Url="html/F_TAUtil_Gaf_GafFrame_Data.htm" />
+  <HelpKINode Title="GafFrame.Height field" Url="html/F_TAUtil_Gaf_GafFrame_Height.htm" />
+  <HelpKINode Title="GafFrame.OffsetX field" Url="html/F_TAUtil_Gaf_GafFrame_OffsetX.htm" />
+  <HelpKINode Title="GafFrame.OffsetY field" Url="html/F_TAUtil_Gaf_GafFrame_OffsetY.htm" />
+  <HelpKINode Title="GafFrame.TransparencyIndex field" Url="html/F_TAUtil_Gaf_GafFrame_TransparencyIndex.htm" />
+  <HelpKINode Title="GafFrame.Width field" Url="html/F_TAUtil_Gaf_GafFrame_Width.htm" />
+  <HelpKINode Title="GafReader class">
+    <HelpKINode Title="GafReader Class" Url="html/T_TAUtil_Gaf_GafReader.htm" />
+    <HelpKINode Title="about GafReader class" Url="html/T_TAUtil_Gaf_GafReader.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_TAUtil_Gaf_GafReader__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Gaf_GafReader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GafReader.Dispose method" Url="html/Overload_TAUtil_Gaf_GafReader_Dispose.htm" />
+  <HelpKINode Title="GafReader.Finalize method" Url="html/M_TAUtil_Gaf_GafReader_Finalize.htm" />
+  <HelpKINode Title="GafReader.GafReader constructor" Url="html/Overload_TAUtil_Gaf_GafReader__ctor.htm" />
+  <HelpKINode Title="GafReader.Read method" Url="html/M_TAUtil_Gaf_GafReader_Read.htm" />
+  <HelpKINode Title="GetDirectories method" Url="html/M_TAUtil_Hpi_HpiReader_GetDirectories.htm" />
+  <HelpKINode Title="GetDirectoryName method" Url="html/M_TAUtil_Hpi_HpiPath_GetDirectoryName.htm" />
+  <HelpKINode Title="GetEnumerator method">
+    <HelpKINode Title="ArrayPalette.GetEnumerator Method " Url="html/M_TAUtil_Gdi_Palette_ArrayPalette_GetEnumerator.htm" />
+    <HelpKINode Title="TransparencyMaskedPalette.GetEnumerator Method " Url="html/M_TAUtil_Gdi_Palette_TransparencyMaskedPalette_GetEnumerator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetExtension method" Url="html/M_TAUtil_Hpi_HpiPath_GetExtension.htm" />
+  <HelpKINode Title="GetFileName method" Url="html/M_TAUtil_Hpi_HpiPath_GetFileName.htm" />
+  <HelpKINode Title="GetFileNameWithoutExtension method" Url="html/M_TAUtil_Hpi_HpiPath_GetFileNameWithoutExtension.htm" />
+  <HelpKINode Title="GetFiles method" Url="html/Overload_TAUtil_Hpi_HpiReader_GetFiles.htm" />
+  <HelpKINode Title="GetFilesAndDirectories method" Url="html/M_TAUtil_Hpi_HpiReader_GetFilesAndDirectories.htm" />
+  <HelpKINode Title="GetFilesRecursive method" Url="html/Overload_TAUtil_Hpi_HpiReader_GetFilesRecursive.htm" />
+  <HelpKINode Title="GetMinimap method">
+    <HelpKINode Title="ISctSource.GetMinimap Method " Url="html/M_TAUtil_Sct_ISctSource_GetMinimap.htm" />
+    <HelpKINode Title="ITntSource.GetMinimap Method " Url="html/M_TAUtil_Tnt_ITntSource_GetMinimap.htm" />
+    <HelpKINode Title="SctReader.GetMinimap Method " Url="html/M_TAUtil_Sct_SctReader_GetMinimap.htm" />
+    <HelpKINode Title="TntReader.GetMinimap Method " Url="html/M_TAUtil_Tnt_TntReader_GetMinimap.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetNearest method">
+    <HelpKINode Title="ArrayPalette.GetNearest Method " Url="html/M_TAUtil_Gdi_Palette_ArrayPalette_GetNearest.htm" />
+    <HelpKINode Title="IPalette.GetNearest Method " Url="html/M_TAUtil_Gdi_Palette_IPalette_GetNearest.htm" />
+    <HelpKINode Title="TransparencyMaskedPalette.GetNearest Method " Url="html/M_TAUtil_Gdi_Palette_TransparencyMaskedPalette_GetNearest.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Height field">
+    <HelpKINode Title="GafFrame.Height Field" Url="html/F_TAUtil_Gaf_GafFrame_Height.htm" />
+    <HelpKINode Title="TileAttr.Height Field" Url="html/F_TAUtil_Tnt_TileAttr_Height.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Height property">
+    <HelpKINode Title="MinimapInfo.Height Property " Url="html/P_TAUtil_Tnt_MinimapInfo_Height.htm" />
+    <HelpKINode Title="TntReader.Height Property " Url="html/P_TAUtil_Tnt_TntReader_Height.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HeightInAttrs property" Url="html/P_TAUtil_Sct_SctReader_HeightInAttrs.htm" />
+  <HelpKINode Title="HpiEntry structure">
+    <HelpKINode Title="HpiEntry Structure" Url="html/T_TAUtil_Hpi_HpiEntry.htm" />
+    <HelpKINode Title="about HpiEntry structure" Url="html/T_TAUtil_Hpi_HpiEntry.htm" />
+    <HelpKINode Title="constructor" Url="html/M_TAUtil_Hpi_HpiEntry__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Hpi_HpiEntry.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Hpi_HpiEntry.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HpiEntry.FileType enumeration" Url="html/T_TAUtil_Hpi_HpiEntry_FileType.htm" />
+  <HelpKINode Title="HpiEntry.HpiEntry constructor" Url="html/M_TAUtil_Hpi_HpiEntry__ctor.htm" />
+  <HelpKINode Title="HpiEntry.Name property" Url="html/P_TAUtil_Hpi_HpiEntry_Name.htm" />
+  <HelpKINode Title="HpiEntry.Size property" Url="html/P_TAUtil_Hpi_HpiEntry_Size.htm" />
+  <HelpKINode Title="HpiEntry.Type property" Url="html/P_TAUtil_Hpi_HpiEntry_Type.htm" />
+  <HelpKINode Title="HpiPath class">
+    <HelpKINode Title="HpiPath Class" Url="html/T_TAUtil_Hpi_HpiPath.htm" />
+    <HelpKINode Title="about HpiPath class" Url="html/T_TAUtil_Hpi_HpiPath.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_TAUtil_Hpi_HpiPath.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Hpi_HpiPath.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HpiPath.AltDirectorySeparatorChar field" Url="html/F_TAUtil_Hpi_HpiPath_AltDirectorySeparatorChar.htm" />
+  <HelpKINode Title="HpiPath.ChangeExtension method" Url="html/M_TAUtil_Hpi_HpiPath_ChangeExtension.htm" />
+  <HelpKINode Title="HpiPath.Combine method" Url="html/M_TAUtil_Hpi_HpiPath_Combine.htm" />
+  <HelpKINode Title="HpiPath.DirectorySeparatorChar field" Url="html/F_TAUtil_Hpi_HpiPath_DirectorySeparatorChar.htm" />
+  <HelpKINode Title="HpiPath.GetDirectoryName method" Url="html/M_TAUtil_Hpi_HpiPath_GetDirectoryName.htm" />
+  <HelpKINode Title="HpiPath.GetExtension method" Url="html/M_TAUtil_Hpi_HpiPath_GetExtension.htm" />
+  <HelpKINode Title="HpiPath.GetFileName method" Url="html/M_TAUtil_Hpi_HpiPath_GetFileName.htm" />
+  <HelpKINode Title="HpiPath.GetFileNameWithoutExtension method" Url="html/M_TAUtil_Hpi_HpiPath_GetFileNameWithoutExtension.htm" />
+  <HelpKINode Title="HpiReader class">
+    <HelpKINode Title="HpiReader Class" Url="html/T_TAUtil_Hpi_HpiReader.htm" />
+    <HelpKINode Title="about HpiReader class" Url="html/T_TAUtil_Hpi_HpiReader.htm" />
+    <HelpKINode Title="constructor" Url="html/M_TAUtil_Hpi_HpiReader__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Hpi_HpiReader.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Hpi_HpiReader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HpiReader.Close method" Url="html/M_TAUtil_Hpi_HpiReader_Close.htm" />
+  <HelpKINode Title="HpiReader.Dispose method" Url="html/M_TAUtil_Hpi_HpiReader_Dispose.htm" />
+  <HelpKINode Title="HpiReader.ExtractFile method" Url="html/M_TAUtil_Hpi_HpiReader_ExtractFile.htm" />
+  <HelpKINode Title="HpiReader.FileName property" Url="html/P_TAUtil_Hpi_HpiReader_FileName.htm" />
+  <HelpKINode Title="HpiReader.GetDirectories method" Url="html/M_TAUtil_Hpi_HpiReader_GetDirectories.htm" />
+  <HelpKINode Title="HpiReader.GetFiles method" Url="html/Overload_TAUtil_Hpi_HpiReader_GetFiles.htm" />
+  <HelpKINode Title="HpiReader.GetFilesAndDirectories method" Url="html/M_TAUtil_Hpi_HpiReader_GetFilesAndDirectories.htm" />
+  <HelpKINode Title="HpiReader.GetFilesRecursive method" Url="html/Overload_TAUtil_Hpi_HpiReader_GetFilesRecursive.htm" />
+  <HelpKINode Title="HpiReader.HpiReader constructor" Url="html/M_TAUtil_Hpi_HpiReader__ctor.htm" />
+  <HelpKINode Title="HpiReader.ReadFile method" Url="html/M_TAUtil_Hpi_HpiReader_ReadFile.htm" />
+  <HelpKINode Title="HpiReader.ReadTextFile method" Url="html/M_TAUtil_Hpi_HpiReader_ReadTextFile.htm" />
+  <HelpKINode Title="HpiWriter class">
+    <HelpKINode Title="HpiWriter Class" Url="html/T_TAUtil_Hpi_HpiWriter.htm" />
+    <HelpKINode Title="about HpiWriter class" Url="html/T_TAUtil_Hpi_HpiWriter.htm" />
+    <HelpKINode Title="constructor" Url="html/M_TAUtil_Hpi_HpiWriter__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Hpi_HpiWriter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HpiWriter.AddFile method" Url="html/M_TAUtil_Hpi_HpiWriter_AddFile.htm" />
+  <HelpKINode Title="HpiWriter.Close method" Url="html/M_TAUtil_Hpi_HpiWriter_Close.htm" />
+  <HelpKINode Title="HpiWriter.CompressionMethod enumeration" Url="html/T_TAUtil_Hpi_HpiWriter_CompressionMethod.htm" />
+  <HelpKINode Title="HpiWriter.CreateDirectory method" Url="html/M_TAUtil_Hpi_HpiWriter_CreateDirectory.htm" />
+  <HelpKINode Title="HpiWriter.Dispose method" Url="html/M_TAUtil_Hpi_HpiWriter_Dispose.htm" />
+  <HelpKINode Title="HpiWriter.HpiCallback delegate" Url="html/T_TAUtil_Hpi_HpiWriter_HpiCallback.htm" />
+  <HelpKINode Title="HpiWriter.HpiWriter constructor" Url="html/M_TAUtil_Hpi_HpiWriter__ctor.htm" />
+  <HelpKINode Title="IModelReaderAdapter interface">
+    <HelpKINode Title="IModelReaderAdapter Interface" Url="html/T_TAUtil__3do_IModelReaderAdapter.htm" />
+    <HelpKINode Title="about IModelReaderAdapter interface" Url="html/T_TAUtil__3do_IModelReaderAdapter.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil__3do_IModelReaderAdapter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IModelReaderAdapter.AddPrimitive method" Url="html/M_TAUtil__3do_IModelReaderAdapter_AddPrimitive.htm" />
+  <HelpKINode Title="IModelReaderAdapter.AddVertex method" Url="html/M_TAUtil__3do_IModelReaderAdapter_AddVertex.htm" />
+  <HelpKINode Title="IModelReaderAdapter.BackToParent method" Url="html/M_TAUtil__3do_IModelReaderAdapter_BackToParent.htm" />
+  <HelpKINode Title="IModelReaderAdapter.CreateChild method" Url="html/M_TAUtil__3do_IModelReaderAdapter_CreateChild.htm" />
+  <HelpKINode Title="Initialize method">
+    <HelpKINode Title="ITdfNodeAdapter.Initialize Method " Url="html/M_TAUtil_Tdf_ITdfNodeAdapter_Initialize.htm" />
+    <HelpKINode Title="TdfNodeAdapter.Initialize Method " Url="html/M_TAUtil_Tdf_TdfNodeAdapter_Initialize.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IPalette interface">
+    <HelpKINode Title="IPalette Interface" Url="html/T_TAUtil_Gdi_Palette_IPalette.htm" />
+    <HelpKINode Title="about IPalette interface" Url="html/T_TAUtil_Gdi_Palette_IPalette.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Gdi_Palette_IPalette.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Gdi_Palette_IPalette.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IPalette.Count property" Url="html/P_TAUtil_Gdi_Palette_IPalette_Count.htm" />
+  <HelpKINode Title="IPalette.GetNearest method" Url="html/M_TAUtil_Gdi_Palette_IPalette_GetNearest.htm" />
+  <HelpKINode Title="IPalette.Item property" Url="html/P_TAUtil_Gdi_Palette_IPalette_Item.htm" />
+  <HelpKINode Title="IPalette.LookUp method" Url="html/M_TAUtil_Gdi_Palette_IPalette_LookUp.htm" />
+  <HelpKINode Title="ISctSource interface">
+    <HelpKINode Title="ISctSource Interface" Url="html/T_TAUtil_Sct_ISctSource.htm" />
+    <HelpKINode Title="about ISctSource interface" Url="html/T_TAUtil_Sct_ISctSource.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Sct_ISctSource.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Sct_ISctSource.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISctSource.DataHeight property" Url="html/P_TAUtil_Sct_ISctSource_DataHeight.htm" />
+  <HelpKINode Title="ISctSource.DataWidth property" Url="html/P_TAUtil_Sct_ISctSource_DataWidth.htm" />
+  <HelpKINode Title="ISctSource.EnumerateAttrs method" Url="html/M_TAUtil_Sct_ISctSource_EnumerateAttrs.htm" />
+  <HelpKINode Title="ISctSource.EnumerateData method" Url="html/M_TAUtil_Sct_ISctSource_EnumerateData.htm" />
+  <HelpKINode Title="ISctSource.EnumerateTiles method" Url="html/M_TAUtil_Sct_ISctSource_EnumerateTiles.htm" />
+  <HelpKINode Title="ISctSource.GetMinimap method" Url="html/M_TAUtil_Sct_ISctSource_GetMinimap.htm" />
+  <HelpKINode Title="ISctSource.TileCount property" Url="html/P_TAUtil_Sct_ISctSource_TileCount.htm" />
+  <HelpKINode Title="ITdfNodeAdapter interface">
+    <HelpKINode Title="ITdfNodeAdapter Interface" Url="html/T_TAUtil_Tdf_ITdfNodeAdapter.htm" />
+    <HelpKINode Title="about ITdfNodeAdapter interface" Url="html/T_TAUtil_Tdf_ITdfNodeAdapter.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Tdf_ITdfNodeAdapter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ITdfNodeAdapter.AddProperty method" Url="html/M_TAUtil_Tdf_ITdfNodeAdapter_AddProperty.htm" />
+  <HelpKINode Title="ITdfNodeAdapter.BeginBlock method" Url="html/M_TAUtil_Tdf_ITdfNodeAdapter_BeginBlock.htm" />
+  <HelpKINode Title="ITdfNodeAdapter.EndBlock method" Url="html/M_TAUtil_Tdf_ITdfNodeAdapter_EndBlock.htm" />
+  <HelpKINode Title="ITdfNodeAdapter.Initialize method" Url="html/M_TAUtil_Tdf_ITdfNodeAdapter_Initialize.htm" />
+  <HelpKINode Title="Item property">
+    <HelpKINode Title="ArrayPalette.Item Property " Url="html/P_TAUtil_Gdi_Palette_ArrayPalette_Item.htm" />
+    <HelpKINode Title="IPalette.Item Property " Url="html/P_TAUtil_Gdi_Palette_IPalette_Item.htm" />
+    <HelpKINode Title="TransparencyMaskedPalette.Item Property " Url="html/P_TAUtil_Gdi_Palette_TransparencyMaskedPalette_Item.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ITntSource interface">
+    <HelpKINode Title="ITntSource Interface" Url="html/T_TAUtil_Tnt_ITntSource.htm" />
+    <HelpKINode Title="about ITntSource interface" Url="html/T_TAUtil_Tnt_ITntSource.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Tnt_ITntSource.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Tnt_ITntSource.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ITntSource.AnimCount property" Url="html/P_TAUtil_Tnt_ITntSource_AnimCount.htm" />
+  <HelpKINode Title="ITntSource.DataHeight property" Url="html/P_TAUtil_Tnt_ITntSource_DataHeight.htm" />
+  <HelpKINode Title="ITntSource.DataWidth property" Url="html/P_TAUtil_Tnt_ITntSource_DataWidth.htm" />
+  <HelpKINode Title="ITntSource.EnumerateAnims method" Url="html/M_TAUtil_Tnt_ITntSource_EnumerateAnims.htm" />
+  <HelpKINode Title="ITntSource.EnumerateAttrs method" Url="html/M_TAUtil_Tnt_ITntSource_EnumerateAttrs.htm" />
+  <HelpKINode Title="ITntSource.EnumerateData method" Url="html/M_TAUtil_Tnt_ITntSource_EnumerateData.htm" />
+  <HelpKINode Title="ITntSource.EnumerateTiles method" Url="html/M_TAUtil_Tnt_ITntSource_EnumerateTiles.htm" />
+  <HelpKINode Title="ITntSource.GetMinimap method" Url="html/M_TAUtil_Tnt_ITntSource_GetMinimap.htm" />
+  <HelpKINode Title="ITntSource.SeaLevel property" Url="html/P_TAUtil_Tnt_ITntSource_SeaLevel.htm" />
+  <HelpKINode Title="ITntSource.TileCount property" Url="html/P_TAUtil_Tnt_ITntSource_TileCount.htm" />
+  <HelpKINode Title="Keys property" Url="html/P_TAUtil_Tdf_TdfNode_Keys.htm" />
+  <HelpKINode Title="LineNumber property" Url="html/P_TAUtil_TdfParseException_LineNumber.htm" />
+  <HelpKINode Title="Load method" Url="html/M_TAUtil_Tdf_TdfParser_Load.htm" />
+  <HelpKINode Title="LoadTdf method" Url="html/Overload_TAUtil_Tdf_TdfNode_LoadTdf.htm" />
+  <HelpKINode Title="LookUp method">
+    <HelpKINode Title="ArrayPalette.LookUp Method " Url="html/M_TAUtil_Gdi_Palette_ArrayPalette_LookUp.htm" />
+    <HelpKINode Title="IPalette.LookUp Method " Url="html/M_TAUtil_Gdi_Palette_IPalette_LookUp.htm" />
+    <HelpKINode Title="TransparencyMaskedPalette.LookUp Method " Url="html/M_TAUtil_Gdi_Palette_TransparencyMaskedPalette_LookUp.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LZ77 enumeration member" Url="html/T_TAUtil_Hpi_HpiWriter_CompressionMethod.htm" />
+  <HelpKINode Title="MapConstants class">
+    <HelpKINode Title="MapConstants Class" Url="html/T_TAUtil_MapConstants.htm" />
+    <HelpKINode Title="about MapConstants class" Url="html/T_TAUtil_MapConstants.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_TAUtil_MapConstants.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MapConstants.TileDataLength field" Url="html/F_TAUtil_MapConstants_TileDataLength.htm" />
+  <HelpKINode Title="MapConstants.TileHeight field" Url="html/F_TAUtil_MapConstants_TileHeight.htm" />
+  <HelpKINode Title="MapConstants.TileWidth field" Url="html/F_TAUtil_MapConstants_TileWidth.htm" />
+  <HelpKINode Title="MaxMinimapHeight field" Url="html/F_TAUtil_Tnt_TntConstants_MaxMinimapHeight.htm" />
+  <HelpKINode Title="MaxMinimapWidth field" Url="html/F_TAUtil_Tnt_TntConstants_MaxMinimapWidth.htm" />
+  <HelpKINode Title="MinimapHeight field" Url="html/F_TAUtil_Sct_SctReader_MinimapHeight.htm" />
+  <HelpKINode Title="MinimapInfo class">
+    <HelpKINode Title="MinimapInfo Class" Url="html/T_TAUtil_Tnt_MinimapInfo.htm" />
+    <HelpKINode Title="about MinimapInfo class" Url="html/T_TAUtil_Tnt_MinimapInfo.htm" />
+    <HelpKINode Title="constructor" Url="html/M_TAUtil_Tnt_MinimapInfo__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Tnt_MinimapInfo.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Tnt_MinimapInfo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MinimapInfo.Data property" Url="html/P_TAUtil_Tnt_MinimapInfo_Data.htm" />
+  <HelpKINode Title="MinimapInfo.Height property" Url="html/P_TAUtil_Tnt_MinimapInfo_Height.htm" />
+  <HelpKINode Title="MinimapInfo.MinimapInfo constructor" Url="html/M_TAUtil_Tnt_MinimapInfo__ctor.htm" />
+  <HelpKINode Title="MinimapInfo.Width property" Url="html/P_TAUtil_Tnt_MinimapInfo_Width.htm" />
+  <HelpKINode Title="MinimapVoidByte field" Url="html/F_TAUtil_Tnt_TntConstants_MinimapVoidByte.htm" />
+  <HelpKINode Title="MinimapWidth field" Url="html/F_TAUtil_Sct_SctReader_MinimapWidth.htm" />
+  <HelpKINode Title="ModelReader class">
+    <HelpKINode Title="ModelReader Class" Url="html/T_TAUtil__3do_ModelReader.htm" />
+    <HelpKINode Title="about ModelReader class" Url="html/T_TAUtil__3do_ModelReader.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_TAUtil__3do_ModelReader__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil__3do_ModelReader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ModelReader.ModelReader constructor" Url="html/Overload_TAUtil__3do_ModelReader__ctor.htm" />
+  <HelpKINode Title="ModelReader.Read method" Url="html/M_TAUtil__3do_ModelReader_Read.htm" />
+  <HelpKINode Title="Name property">
+    <HelpKINode Title="GafEntry.Name Property " Url="html/P_TAUtil_Gaf_GafEntry_Name.htm" />
+    <HelpKINode Title="HpiEntry.Name Property " Url="html/P_TAUtil_Hpi_HpiEntry_Name.htm" />
+    <HelpKINode Title="TdfNode.Name Property " Url="html/P_TAUtil_Tdf_TdfNode_Name.htm" />
+  </HelpKINode>
+  <HelpKINode Title="None enumeration member" Url="html/T_TAUtil_Hpi_HpiWriter_CompressionMethod.htm" />
+  <HelpKINode Title="OffsetX field" Url="html/F_TAUtil_Gaf_GafFrame_OffsetX.htm" />
+  <HelpKINode Title="OffsetY field" Url="html/F_TAUtil_Gaf_GafFrame_OffsetY.htm" />
+  <HelpKINode Title="Pad1 field" Url="html/F_TAUtil_Tnt_TileAttr_Pad1.htm" />
+  <HelpKINode Title="PaletteFactory class">
+    <HelpKINode Title="PaletteFactory Class" Url="html/T_TAUtil_Gdi_Palette_PaletteFactory.htm" />
+    <HelpKINode Title="about PaletteFactory class" Url="html/T_TAUtil_Gdi_Palette_PaletteFactory.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_TAUtil_Gdi_Palette_PaletteFactory.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Gdi_Palette_PaletteFactory.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PaletteFactory.FromBinaryPal method" Url="html/M_TAUtil_Gdi_Palette_PaletteFactory_FromBinaryPal.htm" />
+  <HelpKINode Title="PaletteFactory.TAPalette field" Url="html/F_TAUtil_Gdi_Palette_PaletteFactory_TAPalette.htm" />
+  <HelpKINode Title="ParseException class">
+    <HelpKINode Title="ParseException Class" Url="html/T_TAUtil_ParseException.htm" />
+    <HelpKINode Title="about ParseException class" Url="html/T_TAUtil_ParseException.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_TAUtil_ParseException__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_TAUtil_ParseException.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_ParseException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_ParseException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ParseException.ParseException constructor" Url="html/Overload_TAUtil_ParseException__ctor.htm" />
+  <HelpKINode Title="Quantization class">
+    <HelpKINode Title="Quantization Class" Url="html/T_TAUtil_Gdi_Palette_Quantization.htm" />
+    <HelpKINode Title="about Quantization class" Url="html/T_TAUtil_Gdi_Palette_Quantization.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Gdi_Palette_Quantization.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Quantization.ToTAPalette method" Url="html/M_TAUtil_Gdi_Palette_Quantization_ToTAPalette.htm" />
+  <HelpKINode Title="Read method">
+    <HelpKINode Title="GafReader.Read Method " Url="html/M_TAUtil_Gaf_GafReader_Read.htm" />
+    <HelpKINode Title="ModelReader.Read Method " Url="html/M_TAUtil__3do_ModelReader_Read.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ReadColor method" Url="html/M_TAUtil_Gdi_Palette_BinaryPaletteReader_ReadColor.htm" />
+  <HelpKINode Title="ReadFile method" Url="html/M_TAUtil_Hpi_HpiReader_ReadFile.htm" />
+  <HelpKINode Title="ReadTextFile method" Url="html/M_TAUtil_Hpi_HpiReader_ReadTextFile.htm" />
+  <HelpKINode Title="RootNode property" Url="html/P_TAUtil_Tdf_TdfNodeAdapter_RootNode.htm" />
+  <HelpKINode Title="SctReader class">
+    <HelpKINode Title="SctReader Class" Url="html/T_TAUtil_Sct_SctReader.htm" />
+    <HelpKINode Title="about SctReader class" Url="html/T_TAUtil_Sct_SctReader.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_TAUtil_Sct_SctReader__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_TAUtil_Sct_SctReader.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Sct_SctReader.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Sct_SctReader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SctReader.DataHeight property" Url="html/P_TAUtil_Sct_SctReader_DataHeight.htm" />
+  <HelpKINode Title="SctReader.DataWidth property" Url="html/P_TAUtil_Sct_SctReader_DataWidth.htm" />
+  <HelpKINode Title="SctReader.Dispose method" Url="html/Overload_TAUtil_Sct_SctReader_Dispose.htm" />
+  <HelpKINode Title="SctReader.EnumerateAttrs method" Url="html/M_TAUtil_Sct_SctReader_EnumerateAttrs.htm" />
+  <HelpKINode Title="SctReader.EnumerateData method" Url="html/M_TAUtil_Sct_SctReader_EnumerateData.htm" />
+  <HelpKINode Title="SctReader.EnumerateTiles method" Url="html/M_TAUtil_Sct_SctReader_EnumerateTiles.htm" />
+  <HelpKINode Title="SctReader.GetMinimap method" Url="html/M_TAUtil_Sct_SctReader_GetMinimap.htm" />
+  <HelpKINode Title="SctReader.HeightInAttrs property" Url="html/P_TAUtil_Sct_SctReader_HeightInAttrs.htm" />
+  <HelpKINode Title="SctReader.MinimapHeight field" Url="html/F_TAUtil_Sct_SctReader_MinimapHeight.htm" />
+  <HelpKINode Title="SctReader.MinimapWidth field" Url="html/F_TAUtil_Sct_SctReader_MinimapWidth.htm" />
+  <HelpKINode Title="SctReader.SctReader constructor" Url="html/Overload_TAUtil_Sct_SctReader__ctor.htm" />
+  <HelpKINode Title="SctReader.TileCount property" Url="html/P_TAUtil_Sct_SctReader_TileCount.htm" />
+  <HelpKINode Title="SctReader.WidthInAttrs property" Url="html/P_TAUtil_Sct_SctReader_WidthInAttrs.htm" />
+  <HelpKINode Title="SctVersion2AttrLength field" Url="html/F_TAUtil_Tnt_TileAttr_SctVersion2AttrLength.htm" />
+  <HelpKINode Title="SctVersion3AttrLength field" Url="html/F_TAUtil_Tnt_TileAttr_SctVersion3AttrLength.htm" />
+  <HelpKINode Title="SctWriter class">
+    <HelpKINode Title="SctWriter Class" Url="html/T_TAUtil_Sct_SctWriter.htm" />
+    <HelpKINode Title="about SctWriter class" Url="html/T_TAUtil_Sct_SctWriter.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_TAUtil_Sct_SctWriter__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Sct_SctWriter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SctWriter.Dispose method" Url="html/Overload_TAUtil_Sct_SctWriter_Dispose.htm" />
+  <HelpKINode Title="SctWriter.SctWriter constructor" Url="html/Overload_TAUtil_Sct_SctWriter__ctor.htm" />
+  <HelpKINode Title="SctWriter.WriteSct method" Url="html/M_TAUtil_Sct_SctWriter_WriteSct.htm" />
+  <HelpKINode Title="SeaLevel property">
+    <HelpKINode Title="ITntSource.SeaLevel Property " Url="html/P_TAUtil_Tnt_ITntSource_SeaLevel.htm" />
+    <HelpKINode Title="TntReader.SeaLevel Property " Url="html/P_TAUtil_Tnt_TntReader_SeaLevel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Serialize method" Url="html/M_TAUtil_Gdi_Bitmap_BitmapSerializer_Serialize.htm" />
+  <HelpKINode Title="Size property" Url="html/P_TAUtil_Hpi_HpiEntry_Size.htm" />
+  <HelpKINode Title="TAPalette field" Url="html/F_TAUtil_Gdi_Palette_PaletteFactory_TAPalette.htm" />
+  <HelpKINode Title="TAUtil namespace" Url="html/N_TAUtil.htm" />
+  <HelpKINode Title="TAUtil.Gaf namespace" Url="html/N_TAUtil_Gaf.htm" />
+  <HelpKINode Title="TAUtil.Gaf.GafEntry class" Url="html/T_TAUtil_Gaf_GafEntry.htm" />
+  <HelpKINode Title="TAUtil.Gaf.GafFrame structure" Url="html/T_TAUtil_Gaf_GafFrame.htm" />
+  <HelpKINode Title="TAUtil.Gaf.GafReader class" Url="html/T_TAUtil_Gaf_GafReader.htm" />
+  <HelpKINode Title="TAUtil.Gdi.Bitmap namespace" Url="html/N_TAUtil_Gdi_Bitmap.htm" />
+  <HelpKINode Title="TAUtil.Gdi.Bitmap.BitmapConvert class" Url="html/T_TAUtil_Gdi_Bitmap_BitmapConvert.htm" />
+  <HelpKINode Title="TAUtil.Gdi.Bitmap.BitmapDeserializer class" Url="html/T_TAUtil_Gdi_Bitmap_BitmapDeserializer.htm" />
+  <HelpKINode Title="TAUtil.Gdi.Bitmap.BitmapSerializer class" Url="html/T_TAUtil_Gdi_Bitmap_BitmapSerializer.htm" />
+  <HelpKINode Title="TAUtil.Gdi.Palette namespace" Url="html/N_TAUtil_Gdi_Palette.htm" />
+  <HelpKINode Title="TAUtil.Gdi.Palette.ArrayPalette class" Url="html/T_TAUtil_Gdi_Palette_ArrayPalette.htm" />
+  <HelpKINode Title="TAUtil.Gdi.Palette.BinaryPaletteReader class" Url="html/T_TAUtil_Gdi_Palette_BinaryPaletteReader.htm" />
+  <HelpKINode Title="TAUtil.Gdi.Palette.IPalette interface" Url="html/T_TAUtil_Gdi_Palette_IPalette.htm" />
+  <HelpKINode Title="TAUtil.Gdi.Palette.PaletteFactory class" Url="html/T_TAUtil_Gdi_Palette_PaletteFactory.htm" />
+  <HelpKINode Title="TAUtil.Gdi.Palette.Quantization class" Url="html/T_TAUtil_Gdi_Palette_Quantization.htm" />
+  <HelpKINode Title="TAUtil.Gdi.Palette.TransparencyMaskedPalette class" Url="html/T_TAUtil_Gdi_Palette_TransparencyMaskedPalette.htm" />
+  <HelpKINode Title="TAUtil.Hpi namespace" Url="html/N_TAUtil_Hpi.htm" />
+  <HelpKINode Title="TAUtil.Hpi.HpiEntry structure" Url="html/T_TAUtil_Hpi_HpiEntry.htm" />
+  <HelpKINode Title="TAUtil.Hpi.HpiEntry.FileType enumeration" Url="html/T_TAUtil_Hpi_HpiEntry_FileType.htm" />
+  <HelpKINode Title="TAUtil.Hpi.HpiPath class" Url="html/T_TAUtil_Hpi_HpiPath.htm" />
+  <HelpKINode Title="TAUtil.Hpi.HpiReader class" Url="html/T_TAUtil_Hpi_HpiReader.htm" />
+  <HelpKINode Title="TAUtil.Hpi.HpiWriter class" Url="html/T_TAUtil_Hpi_HpiWriter.htm" />
+  <HelpKINode Title="TAUtil.Hpi.HpiWriter.CompressionMethod enumeration" Url="html/T_TAUtil_Hpi_HpiWriter_CompressionMethod.htm" />
+  <HelpKINode Title="TAUtil.Hpi.HpiWriter.HpiCallback delegate" Url="html/T_TAUtil_Hpi_HpiWriter_HpiCallback.htm" />
+  <HelpKINode Title="TAUtil.MapConstants class" Url="html/T_TAUtil_MapConstants.htm" />
+  <HelpKINode Title="TAUtil.ParseException class" Url="html/T_TAUtil_ParseException.htm" />
+  <HelpKINode Title="TAUtil.Sct namespace" Url="html/N_TAUtil_Sct.htm" />
+  <HelpKINode Title="TAUtil.Sct.ISctSource interface" Url="html/T_TAUtil_Sct_ISctSource.htm" />
+  <HelpKINode Title="TAUtil.Sct.SctReader class" Url="html/T_TAUtil_Sct_SctReader.htm" />
+  <HelpKINode Title="TAUtil.Sct.SctWriter class" Url="html/T_TAUtil_Sct_SctWriter.htm" />
+  <HelpKINode Title="TAUtil.Tdf namespace" Url="html/N_TAUtil_Tdf.htm" />
+  <HelpKINode Title="TAUtil.Tdf.ITdfNodeAdapter interface" Url="html/T_TAUtil_Tdf_ITdfNodeAdapter.htm" />
+  <HelpKINode Title="TAUtil.Tdf.TdfNode class" Url="html/T_TAUtil_Tdf_TdfNode.htm" />
+  <HelpKINode Title="TAUtil.Tdf.TdfNodeAdapter class" Url="html/T_TAUtil_Tdf_TdfNodeAdapter.htm" />
+  <HelpKINode Title="TAUtil.Tdf.TdfParser class" Url="html/T_TAUtil_Tdf_TdfParser.htm" />
+  <HelpKINode Title="TAUtil.TdfParseException class" Url="html/T_TAUtil_TdfParseException.htm" />
+  <HelpKINode Title="TAUtil.Tnt namespace" Url="html/N_TAUtil_Tnt.htm" />
+  <HelpKINode Title="TAUtil.Tnt.ITntSource interface" Url="html/T_TAUtil_Tnt_ITntSource.htm" />
+  <HelpKINode Title="TAUtil.Tnt.MinimapInfo class" Url="html/T_TAUtil_Tnt_MinimapInfo.htm" />
+  <HelpKINode Title="TAUtil.Tnt.TileAttr structure" Url="html/T_TAUtil_Tnt_TileAttr.htm" />
+  <HelpKINode Title="TAUtil.Tnt.TntConstants class" Url="html/T_TAUtil_Tnt_TntConstants.htm" />
+  <HelpKINode Title="TAUtil.Tnt.TntReader class" Url="html/T_TAUtil_Tnt_TntReader.htm" />
+  <HelpKINode Title="TAUtil.Tnt.TntWriter class" Url="html/T_TAUtil_Tnt_TntWriter.htm" />
+  <HelpKINode Title="TAUtil._3do namespace" Url="html/N_TAUtil__3do.htm" />
+  <HelpKINode Title="TAUtil._3do.IModelReaderAdapter interface" Url="html/T_TAUtil__3do_IModelReaderAdapter.htm" />
+  <HelpKINode Title="TAUtil._3do.ModelReader class" Url="html/T_TAUtil__3do_ModelReader.htm" />
+  <HelpKINode Title="TAUtil._3do.Vector structure" Url="html/T_TAUtil__3do_Vector.htm" />
+  <HelpKINode Title="TdfNode class">
+    <HelpKINode Title="TdfNode Class" Url="html/T_TAUtil_Tdf_TdfNode.htm" />
+    <HelpKINode Title="about TdfNode class" Url="html/T_TAUtil_Tdf_TdfNode.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_TAUtil_Tdf_TdfNode__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Tdf_TdfNode.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Tdf_TdfNode.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TdfNode.Entries property" Url="html/P_TAUtil_Tdf_TdfNode_Entries.htm" />
+  <HelpKINode Title="TdfNode.Keys property" Url="html/P_TAUtil_Tdf_TdfNode_Keys.htm" />
+  <HelpKINode Title="TdfNode.LoadTdf method" Url="html/Overload_TAUtil_Tdf_TdfNode_LoadTdf.htm" />
+  <HelpKINode Title="TdfNode.Name property" Url="html/P_TAUtil_Tdf_TdfNode_Name.htm" />
+  <HelpKINode Title="TdfNode.TdfNode constructor" Url="html/Overload_TAUtil_Tdf_TdfNode__ctor.htm" />
+  <HelpKINode Title="TdfNode.WriteTdf method" Url="html/M_TAUtil_Tdf_TdfNode_WriteTdf.htm" />
+  <HelpKINode Title="TdfNodeAdapter class">
+    <HelpKINode Title="TdfNodeAdapter Class" Url="html/T_TAUtil_Tdf_TdfNodeAdapter.htm" />
+    <HelpKINode Title="about TdfNodeAdapter class" Url="html/T_TAUtil_Tdf_TdfNodeAdapter.htm" />
+    <HelpKINode Title="constructor" Url="html/M_TAUtil_Tdf_TdfNodeAdapter__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Tdf_TdfNodeAdapter.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Tdf_TdfNodeAdapter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TdfNodeAdapter.AddProperty method" Url="html/M_TAUtil_Tdf_TdfNodeAdapter_AddProperty.htm" />
+  <HelpKINode Title="TdfNodeAdapter.BeginBlock method" Url="html/M_TAUtil_Tdf_TdfNodeAdapter_BeginBlock.htm" />
+  <HelpKINode Title="TdfNodeAdapter.EndBlock method" Url="html/M_TAUtil_Tdf_TdfNodeAdapter_EndBlock.htm" />
+  <HelpKINode Title="TdfNodeAdapter.Initialize method" Url="html/M_TAUtil_Tdf_TdfNodeAdapter_Initialize.htm" />
+  <HelpKINode Title="TdfNodeAdapter.RootNode property" Url="html/P_TAUtil_Tdf_TdfNodeAdapter_RootNode.htm" />
+  <HelpKINode Title="TdfNodeAdapter.TdfNodeAdapter constructor" Url="html/M_TAUtil_Tdf_TdfNodeAdapter__ctor.htm" />
+  <HelpKINode Title="TdfParseException class">
+    <HelpKINode Title="TdfParseException Class" Url="html/T_TAUtil_TdfParseException.htm" />
+    <HelpKINode Title="about TdfParseException class" Url="html/T_TAUtil_TdfParseException.htm" />
+    <HelpKINode Title="constructor" Url="html/M_TAUtil_TdfParseException__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_TAUtil_TdfParseException.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_TdfParseException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_TdfParseException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TdfParseException.ColumnNumber property" Url="html/P_TAUtil_TdfParseException_ColumnNumber.htm" />
+  <HelpKINode Title="TdfParseException.LineNumber property" Url="html/P_TAUtil_TdfParseException_LineNumber.htm" />
+  <HelpKINode Title="TdfParseException.TdfParseException constructor" Url="html/M_TAUtil_TdfParseException__ctor.htm" />
+  <HelpKINode Title="TdfParser class">
+    <HelpKINode Title="TdfParser Class" Url="html/T_TAUtil_Tdf_TdfParser.htm" />
+    <HelpKINode Title="about TdfParser class" Url="html/T_TAUtil_Tdf_TdfParser.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_TAUtil_Tdf_TdfParser__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Tdf_TdfParser.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Tdf_TdfParser.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TdfParser.CurrentColumn property" Url="html/P_TAUtil_Tdf_TdfParser_CurrentColumn.htm" />
+  <HelpKINode Title="TdfParser.CurrentLine property" Url="html/P_TAUtil_Tdf_TdfParser_CurrentLine.htm" />
+  <HelpKINode Title="TdfParser.Load method" Url="html/M_TAUtil_Tdf_TdfParser_Load.htm" />
+  <HelpKINode Title="TdfParser.TdfParser constructor" Url="html/Overload_TAUtil_Tdf_TdfParser__ctor.htm" />
+  <HelpKINode Title="TileAttr structure">
+    <HelpKINode Title="TileAttr Structure" Url="html/T_TAUtil_Tnt_TileAttr.htm" />
+    <HelpKINode Title="about TileAttr structure" Url="html/T_TAUtil_Tnt_TileAttr.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_TAUtil_Tnt_TileAttr.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Tnt_TileAttr.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TileAttr.AttrLength field" Url="html/F_TAUtil_Tnt_TileAttr_AttrLength.htm" />
+  <HelpKINode Title="TileAttr.Feature field" Url="html/F_TAUtil_Tnt_TileAttr_Feature.htm" />
+  <HelpKINode Title="TileAttr.FeatureNone field" Url="html/F_TAUtil_Tnt_TileAttr_FeatureNone.htm" />
+  <HelpKINode Title="TileAttr.FeatureUnknown field" Url="html/F_TAUtil_Tnt_TileAttr_FeatureUnknown.htm" />
+  <HelpKINode Title="TileAttr.FeatureVoid field" Url="html/F_TAUtil_Tnt_TileAttr_FeatureVoid.htm" />
+  <HelpKINode Title="TileAttr.Height field" Url="html/F_TAUtil_Tnt_TileAttr_Height.htm" />
+  <HelpKINode Title="TileAttr.Pad1 field" Url="html/F_TAUtil_Tnt_TileAttr_Pad1.htm" />
+  <HelpKINode Title="TileAttr.SctVersion2AttrLength field" Url="html/F_TAUtil_Tnt_TileAttr_SctVersion2AttrLength.htm" />
+  <HelpKINode Title="TileAttr.SctVersion3AttrLength field" Url="html/F_TAUtil_Tnt_TileAttr_SctVersion3AttrLength.htm" />
+  <HelpKINode Title="TileCount property">
+    <HelpKINode Title="ISctSource.TileCount Property " Url="html/P_TAUtil_Sct_ISctSource_TileCount.htm" />
+    <HelpKINode Title="ITntSource.TileCount Property " Url="html/P_TAUtil_Tnt_ITntSource_TileCount.htm" />
+    <HelpKINode Title="SctReader.TileCount Property " Url="html/P_TAUtil_Sct_SctReader_TileCount.htm" />
+    <HelpKINode Title="TntReader.TileCount Property " Url="html/P_TAUtil_Tnt_TntReader_TileCount.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TileDataLength field" Url="html/F_TAUtil_MapConstants_TileDataLength.htm" />
+  <HelpKINode Title="TileHeight field" Url="html/F_TAUtil_MapConstants_TileHeight.htm" />
+  <HelpKINode Title="TileWidth field" Url="html/F_TAUtil_MapConstants_TileWidth.htm" />
+  <HelpKINode Title="TntConstants class">
+    <HelpKINode Title="TntConstants Class" Url="html/T_TAUtil_Tnt_TntConstants.htm" />
+    <HelpKINode Title="about TntConstants class" Url="html/T_TAUtil_Tnt_TntConstants.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_TAUtil_Tnt_TntConstants.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TntConstants.AnimNameLength field" Url="html/F_TAUtil_Tnt_TntConstants_AnimNameLength.htm" />
+  <HelpKINode Title="TntConstants.MaxMinimapHeight field" Url="html/F_TAUtil_Tnt_TntConstants_MaxMinimapHeight.htm" />
+  <HelpKINode Title="TntConstants.MaxMinimapWidth field" Url="html/F_TAUtil_Tnt_TntConstants_MaxMinimapWidth.htm" />
+  <HelpKINode Title="TntConstants.MinimapVoidByte field" Url="html/F_TAUtil_Tnt_TntConstants_MinimapVoidByte.htm" />
+  <HelpKINode Title="TntReader class">
+    <HelpKINode Title="TntReader Class" Url="html/T_TAUtil_Tnt_TntReader.htm" />
+    <HelpKINode Title="about TntReader class" Url="html/T_TAUtil_Tnt_TntReader.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_TAUtil_Tnt_TntReader__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Tnt_TntReader.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Tnt_TntReader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TntReader.AnimCount property" Url="html/P_TAUtil_Tnt_TntReader_AnimCount.htm" />
+  <HelpKINode Title="TntReader.DataHeight property" Url="html/P_TAUtil_Tnt_TntReader_DataHeight.htm" />
+  <HelpKINode Title="TntReader.DataWidth property" Url="html/P_TAUtil_Tnt_TntReader_DataWidth.htm" />
+  <HelpKINode Title="TntReader.Dispose method" Url="html/Overload_TAUtil_Tnt_TntReader_Dispose.htm" />
+  <HelpKINode Title="TntReader.EnumerateAnims method" Url="html/M_TAUtil_Tnt_TntReader_EnumerateAnims.htm" />
+  <HelpKINode Title="TntReader.EnumerateAttrs method" Url="html/M_TAUtil_Tnt_TntReader_EnumerateAttrs.htm" />
+  <HelpKINode Title="TntReader.EnumerateData method" Url="html/M_TAUtil_Tnt_TntReader_EnumerateData.htm" />
+  <HelpKINode Title="TntReader.EnumerateTiles method" Url="html/M_TAUtil_Tnt_TntReader_EnumerateTiles.htm" />
+  <HelpKINode Title="TntReader.GetMinimap method" Url="html/M_TAUtil_Tnt_TntReader_GetMinimap.htm" />
+  <HelpKINode Title="TntReader.Height property" Url="html/P_TAUtil_Tnt_TntReader_Height.htm" />
+  <HelpKINode Title="TntReader.SeaLevel property" Url="html/P_TAUtil_Tnt_TntReader_SeaLevel.htm" />
+  <HelpKINode Title="TntReader.TileCount property" Url="html/P_TAUtil_Tnt_TntReader_TileCount.htm" />
+  <HelpKINode Title="TntReader.TntReader constructor" Url="html/Overload_TAUtil_Tnt_TntReader__ctor.htm" />
+  <HelpKINode Title="TntReader.Width property" Url="html/P_TAUtil_Tnt_TntReader_Width.htm" />
+  <HelpKINode Title="TntWriter class">
+    <HelpKINode Title="TntWriter Class" Url="html/T_TAUtil_Tnt_TntWriter.htm" />
+    <HelpKINode Title="about TntWriter class" Url="html/T_TAUtil_Tnt_TntWriter.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_TAUtil_Tnt_TntWriter__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Tnt_TntWriter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TntWriter.Dispose method" Url="html/Overload_TAUtil_Tnt_TntWriter_Dispose.htm" />
+  <HelpKINode Title="TntWriter.TntWriter constructor" Url="html/Overload_TAUtil_Tnt_TntWriter__ctor.htm" />
+  <HelpKINode Title="TntWriter.WriteTnt method" Url="html/M_TAUtil_Tnt_TntWriter_WriteTnt.htm" />
+  <HelpKINode Title="ToBitmap method" Url="html/Overload_TAUtil_Gdi_Bitmap_BitmapConvert_ToBitmap.htm" />
+  <HelpKINode Title="ToBytes method">
+    <HelpKINode Title="BitmapConvert.ToBytes Method " Url="html/Overload_TAUtil_Gdi_Bitmap_BitmapConvert_ToBytes.htm" />
+    <HelpKINode Title="BitmapSerializer.ToBytes Method " Url="html/M_TAUtil_Gdi_Bitmap_BitmapSerializer_ToBytes.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ToStream method" Url="html/Overload_TAUtil_Gdi_Bitmap_BitmapConvert_ToStream.htm" />
+  <HelpKINode Title="ToTAPalette method" Url="html/M_TAUtil_Gdi_Palette_Quantization_ToTAPalette.htm" />
+  <HelpKINode Title="TransparencyIndex field" Url="html/F_TAUtil_Gaf_GafFrame_TransparencyIndex.htm" />
+  <HelpKINode Title="TransparencyIndex property" Url="html/P_TAUtil_Gdi_Palette_TransparencyMaskedPalette_TransparencyIndex.htm" />
+  <HelpKINode Title="TransparencyMaskedPalette class">
+    <HelpKINode Title="TransparencyMaskedPalette Class" Url="html/T_TAUtil_Gdi_Palette_TransparencyMaskedPalette.htm" />
+    <HelpKINode Title="about TransparencyMaskedPalette class" Url="html/T_TAUtil_Gdi_Palette_TransparencyMaskedPalette.htm" />
+    <HelpKINode Title="constructor" Url="html/M_TAUtil_Gdi_Palette_TransparencyMaskedPalette__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil_Gdi_Palette_TransparencyMaskedPalette.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TAUtil_Gdi_Palette_TransparencyMaskedPalette.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TransparencyMaskedPalette.Count property" Url="html/P_TAUtil_Gdi_Palette_TransparencyMaskedPalette_Count.htm" />
+  <HelpKINode Title="TransparencyMaskedPalette.GetEnumerator method" Url="html/M_TAUtil_Gdi_Palette_TransparencyMaskedPalette_GetEnumerator.htm" />
+  <HelpKINode Title="TransparencyMaskedPalette.GetNearest method" Url="html/M_TAUtil_Gdi_Palette_TransparencyMaskedPalette_GetNearest.htm" />
+  <HelpKINode Title="TransparencyMaskedPalette.Item property" Url="html/P_TAUtil_Gdi_Palette_TransparencyMaskedPalette_Item.htm" />
+  <HelpKINode Title="TransparencyMaskedPalette.LookUp method" Url="html/M_TAUtil_Gdi_Palette_TransparencyMaskedPalette_LookUp.htm" />
+  <HelpKINode Title="TransparencyMaskedPalette.TransparencyIndex property" Url="html/P_TAUtil_Gdi_Palette_TransparencyMaskedPalette_TransparencyIndex.htm" />
+  <HelpKINode Title="TransparencyMaskedPalette.TransparencyMaskedPalette constructor" Url="html/M_TAUtil_Gdi_Palette_TransparencyMaskedPalette__ctor.htm" />
+  <HelpKINode Title="Type property" Url="html/P_TAUtil_Hpi_HpiEntry_Type.htm" />
+  <HelpKINode Title="Vector structure">
+    <HelpKINode Title="Vector Structure" Url="html/T_TAUtil__3do_Vector.htm" />
+    <HelpKINode Title="about Vector structure" Url="html/T_TAUtil__3do_Vector.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_TAUtil__3do_Vector.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TAUtil__3do_Vector.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Vector.X field" Url="html/F_TAUtil__3do_Vector_X.htm" />
+  <HelpKINode Title="Vector.Y field" Url="html/F_TAUtil__3do_Vector_Y.htm" />
+  <HelpKINode Title="Vector.Z field" Url="html/F_TAUtil__3do_Vector_Z.htm" />
+  <HelpKINode Title="Width field" Url="html/F_TAUtil_Gaf_GafFrame_Width.htm" />
+  <HelpKINode Title="Width property">
+    <HelpKINode Title="MinimapInfo.Width Property " Url="html/P_TAUtil_Tnt_MinimapInfo_Width.htm" />
+    <HelpKINode Title="TntReader.Width Property " Url="html/P_TAUtil_Tnt_TntReader_Width.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WidthInAttrs property" Url="html/P_TAUtil_Sct_SctReader_WidthInAttrs.htm" />
+  <HelpKINode Title="WriteSct method" Url="html/M_TAUtil_Sct_SctWriter_WriteSct.htm" />
+  <HelpKINode Title="WriteTdf method" Url="html/M_TAUtil_Tdf_TdfNode_WriteTdf.htm" />
+  <HelpKINode Title="WriteTnt method" Url="html/M_TAUtil_Tnt_TntWriter_WriteTnt.htm" />
+  <HelpKINode Title="X field" Url="html/F_TAUtil__3do_Vector_X.htm" />
+  <HelpKINode Title="Y field" Url="html/F_TAUtil__3do_Vector_Y.htm" />
+  <HelpKINode Title="Z field" Url="html/F_TAUtil__3do_Vector_Z.htm" />
+  <HelpKINode Title="ZLib enumeration member" Url="html/T_TAUtil_Hpi_HpiWriter_CompressionMethod.htm" />
+</HelpKI>

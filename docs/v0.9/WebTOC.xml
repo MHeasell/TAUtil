@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="d581976c-80f0-444e-9b85-75f97de591a6" Title="TAUtil" Url="html/N_TAUtil.htm">
+    <HelpTOCNode Id="dfb8f58c-f13d-4a5e-97e4-1bb7c4bf24c7" Title="MapConstants Class" Url="html/T_TAUtil_MapConstants.htm">
+      <HelpTOCNode Id="4fbb8a59-ead1-4bfe-ad72-9b27964b0e65" Title="MapConstants Fields" Url="html/Fields_T_TAUtil_MapConstants.htm">
+        <HelpTOCNode Title="TileDataLength Field" Url="html/F_TAUtil_MapConstants_TileDataLength.htm" />
+        <HelpTOCNode Title="TileHeight Field" Url="html/F_TAUtil_MapConstants_TileHeight.htm" />
+        <HelpTOCNode Title="TileWidth Field" Url="html/F_TAUtil_MapConstants_TileWidth.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0395449e-da30-44d2-bc68-da0b9b53e9f4" Title="ParseException Class" Url="html/T_TAUtil_ParseException.htm">
+      <HelpTOCNode Id="80c1ea5a-4c27-4477-900a-01eb3f17226a" Title="ParseException Constructor " Url="html/Overload_TAUtil_ParseException__ctor.htm">
+        <HelpTOCNode Title="ParseException Constructor " Url="html/M_TAUtil_ParseException__ctor.htm" />
+        <HelpTOCNode Title="ParseException Constructor (String)" Url="html/M_TAUtil_ParseException__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ParseException Methods" Url="html/Methods_T_TAUtil_ParseException.htm" />
+      <HelpTOCNode Title="ParseException Properties" Url="html/Properties_T_TAUtil_ParseException.htm" />
+      <HelpTOCNode Title="ParseException Events" Url="html/Events_T_TAUtil_ParseException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="37bdbfe3-e5d5-43ae-bae3-fe6304e96b16" Title="TdfParseException Class" Url="html/T_TAUtil_TdfParseException.htm">
+      <HelpTOCNode Title="TdfParseException Constructor " Url="html/M_TAUtil_TdfParseException__ctor.htm" />
+      <HelpTOCNode Title="TdfParseException Methods" Url="html/Methods_T_TAUtil_TdfParseException.htm" />
+      <HelpTOCNode Id="1b64774c-c207-4e89-80dd-5e84bca39850" Title="TdfParseException Properties" Url="html/Properties_T_TAUtil_TdfParseException.htm">
+        <HelpTOCNode Title="ColumnNumber Property " Url="html/P_TAUtil_TdfParseException_ColumnNumber.htm" />
+        <HelpTOCNode Title="LineNumber Property " Url="html/P_TAUtil_TdfParseException_LineNumber.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="TdfParseException Events" Url="html/Events_T_TAUtil_TdfParseException.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="eebf3397-d908-48cb-ba3c-d7a3491ad1d8" Title="TAUtil._3do" Url="html/N_TAUtil__3do.htm">
+    <HelpTOCNode Id="874942d7-6683-4694-9adf-7784bf04f3d4" Title="IModelReaderAdapter Interface" Url="html/T_TAUtil__3do_IModelReaderAdapter.htm">
+      <HelpTOCNode Id="c4942cf0-0165-491b-a931-34ec96fdccad" Title="IModelReaderAdapter Methods" Url="html/Methods_T_TAUtil__3do_IModelReaderAdapter.htm">
+        <HelpTOCNode Title="AddPrimitive Method " Url="html/M_TAUtil__3do_IModelReaderAdapter_AddPrimitive.htm" />
+        <HelpTOCNode Title="AddVertex Method " Url="html/M_TAUtil__3do_IModelReaderAdapter_AddVertex.htm" />
+        <HelpTOCNode Title="BackToParent Method " Url="html/M_TAUtil__3do_IModelReaderAdapter_BackToParent.htm" />
+        <HelpTOCNode Title="CreateChild Method " Url="html/M_TAUtil__3do_IModelReaderAdapter_CreateChild.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="419ee8ef-97d8-4e97-b0f4-a86448de27b5" Title="ModelReader Class" Url="html/T_TAUtil__3do_ModelReader.htm">
+      <HelpTOCNode Id="8f7f85f1-55a4-4d07-99c8-bedc2fbcf20d" Title="ModelReader Constructor " Url="html/Overload_TAUtil__3do_ModelReader__ctor.htm">
+        <HelpTOCNode Title="ModelReader Constructor (BinaryReader, IModelReaderAdapter)" Url="html/M_TAUtil__3do_ModelReader__ctor.htm" />
+        <HelpTOCNode Title="ModelReader Constructor (Stream, IModelReaderAdapter)" Url="html/M_TAUtil__3do_ModelReader__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ab083488-aa66-484c-825b-b91cf7eda989" Title="ModelReader Methods" Url="html/Methods_T_TAUtil__3do_ModelReader.htm">
+        <HelpTOCNode Title="Read Method " Url="html/M_TAUtil__3do_ModelReader_Read.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6249d172-8f05-4d82-bd19-08bf135e4b78" Title="Vector Structure" Url="html/T_TAUtil__3do_Vector.htm">
+      <HelpTOCNode Id="f6a64640-7603-4a3d-8c1e-f7dcd76b3240" Title="Vector Fields" Url="html/Fields_T_TAUtil__3do_Vector.htm">
+        <HelpTOCNode Title="X Field" Url="html/F_TAUtil__3do_Vector_X.htm" />
+        <HelpTOCNode Title="Y Field" Url="html/F_TAUtil__3do_Vector_Y.htm" />
+        <HelpTOCNode Title="Z Field" Url="html/F_TAUtil__3do_Vector_Z.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Vector Methods" Url="html/Methods_T_TAUtil__3do_Vector.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="5ef3da37-3ad8-45e2-a093-6df057a5577b" Title="TAUtil.Gaf" Url="html/N_TAUtil_Gaf.htm">
+    <HelpTOCNode Id="e5d579ae-cbdc-4089-97eb-c8785c9c5687" Title="GafEntry Class" Url="html/T_TAUtil_Gaf_GafEntry.htm">
+      <HelpTOCNode Title="GafEntry Constructor " Url="html/M_TAUtil_Gaf_GafEntry__ctor.htm" />
+      <HelpTOCNode Title="GafEntry Methods" Url="html/Methods_T_TAUtil_Gaf_GafEntry.htm" />
+      <HelpTOCNode Id="1d98385c-7dbf-4936-92b6-6efb34befad8" Title="GafEntry Properties" Url="html/Properties_T_TAUtil_Gaf_GafEntry.htm">
+        <HelpTOCNode Title="Frames Property " Url="html/P_TAUtil_Gaf_GafEntry_Frames.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P_TAUtil_Gaf_GafEntry_Name.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6e61bbc9-f4fd-4807-8994-98424b9863ff" Title="GafFrame Structure" Url="html/T_TAUtil_Gaf_GafFrame.htm">
+      <HelpTOCNode Id="1b95203c-8d44-4c1d-9c90-2e9959c9054b" Title="GafFrame Fields" Url="html/Fields_T_TAUtil_Gaf_GafFrame.htm">
+        <HelpTOCNode Title="Data Field" Url="html/F_TAUtil_Gaf_GafFrame_Data.htm" />
+        <HelpTOCNode Title="Height Field" Url="html/F_TAUtil_Gaf_GafFrame_Height.htm" />
+        <HelpTOCNode Title="OffsetX Field" Url="html/F_TAUtil_Gaf_GafFrame_OffsetX.htm" />
+        <HelpTOCNode Title="OffsetY Field" Url="html/F_TAUtil_Gaf_GafFrame_OffsetY.htm" />
+        <HelpTOCNode Title="TransparencyIndex Field" Url="html/F_TAUtil_Gaf_GafFrame_TransparencyIndex.htm" />
+        <HelpTOCNode Title="Width Field" Url="html/F_TAUtil_Gaf_GafFrame_Width.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="GafFrame Methods" Url="html/Methods_T_TAUtil_Gaf_GafFrame.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="46e8f839-9021-49e0-9933-a06659325e34" Title="GafReader Class" Url="html/T_TAUtil_Gaf_GafReader.htm">
+      <HelpTOCNode Id="9bffb3e0-2713-4f9d-8127-c3f9c136f4a7" Title="GafReader Constructor " Url="html/Overload_TAUtil_Gaf_GafReader__ctor.htm">
+        <HelpTOCNode Title="GafReader Constructor (BinaryReader)" Url="html/M_TAUtil_Gaf_GafReader__ctor.htm" />
+        <HelpTOCNode Title="GafReader Constructor (Stream)" Url="html/M_TAUtil_Gaf_GafReader__ctor_1.htm" />
+        <HelpTOCNode Title="GafReader Constructor (String)" Url="html/M_TAUtil_Gaf_GafReader__ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="dc10fac6-ca7a-4682-a475-fbf21f4ed10b" Title="GafReader Methods" Url="html/Methods_T_TAUtil_Gaf_GafReader.htm">
+        <HelpTOCNode Id="d4c11c1e-460d-41dc-8057-490096e8a43a" Title="Dispose Method " Url="html/Overload_TAUtil_Gaf_GafReader_Dispose.htm">
+          <HelpTOCNode Title="Dispose Method " Url="html/M_TAUtil_Gaf_GafReader_Dispose.htm" />
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/M_TAUtil_Gaf_GafReader_Dispose_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Finalize Method " Url="html/M_TAUtil_Gaf_GafReader_Finalize.htm" />
+        <HelpTOCNode Title="Read Method " Url="html/M_TAUtil_Gaf_GafReader_Read.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="afdc1834-3302-4284-8c78-05eaac64ae66" Title="TAUtil.Gdi.Bitmap" Url="html/N_TAUtil_Gdi_Bitmap.htm">
+    <HelpTOCNode Id="3c0f5301-ca12-41f3-9bcb-8cb7601149f4" Title="BitmapConvert Class" Url="html/T_TAUtil_Gdi_Bitmap_BitmapConvert.htm">
+      <HelpTOCNode Id="c3ebb52b-a0f8-4e17-923c-cd28ceddbbc5" Title="BitmapConvert Methods" Url="html/Methods_T_TAUtil_Gdi_Bitmap_BitmapConvert.htm">
+        <HelpTOCNode Id="b07f8c8a-eb7e-456e-b3bd-c2d940e6ef95" Title="ToBitmap Method " Url="html/Overload_TAUtil_Gdi_Bitmap_BitmapConvert_ToBitmap.htm">
+          <HelpTOCNode Title="ToBitmap Method (Byte[], Int32, Int32)" Url="html/M_TAUtil_Gdi_Bitmap_BitmapConvert_ToBitmap.htm" />
+          <HelpTOCNode Title="ToBitmap Method (Stream, Int32, Int32)" Url="html/M_TAUtil_Gdi_Bitmap_BitmapConvert_ToBitmap_2.htm" />
+          <HelpTOCNode Title="ToBitmap Method (Byte[], Int32, Int32, Int32)" Url="html/M_TAUtil_Gdi_Bitmap_BitmapConvert_ToBitmap_1.htm" />
+          <HelpTOCNode Title="ToBitmap Method (Stream, Int32, Int32, Int32)" Url="html/M_TAUtil_Gdi_Bitmap_BitmapConvert_ToBitmap_3.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="d09d30e5-9d53-4500-b57b-f22a004320b2" Title="ToBytes Method " Url="html/Overload_TAUtil_Gdi_Bitmap_BitmapConvert_ToBytes.htm">
+          <HelpTOCNode Title="ToBytes Method (Bitmap)" Url="html/M_TAUtil_Gdi_Bitmap_BitmapConvert_ToBytes.htm" />
+          <HelpTOCNode Title="ToBytes Method (Bitmap, Int32)" Url="html/M_TAUtil_Gdi_Bitmap_BitmapConvert_ToBytes_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="89ebc812-996d-4096-962f-93fbe9f6b112" Title="ToStream Method " Url="html/Overload_TAUtil_Gdi_Bitmap_BitmapConvert_ToStream.htm">
+          <HelpTOCNode Title="ToStream Method (Stream, Bitmap)" Url="html/M_TAUtil_Gdi_Bitmap_BitmapConvert_ToStream.htm" />
+          <HelpTOCNode Title="ToStream Method (Stream, Bitmap, Int32)" Url="html/M_TAUtil_Gdi_Bitmap_BitmapConvert_ToStream_1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b4c7b714-8aaf-4fd1-8ff6-83eb14cc1a57" Title="BitmapDeserializer Class" Url="html/T_TAUtil_Gdi_Bitmap_BitmapDeserializer.htm">
+      <HelpTOCNode Title="BitmapDeserializer Constructor " Url="html/M_TAUtil_Gdi_Bitmap_BitmapDeserializer__ctor.htm" />
+      <HelpTOCNode Id="b84a6d29-2932-491b-8efd-f3831efc7cea" Title="BitmapDeserializer Methods" Url="html/Methods_T_TAUtil_Gdi_Bitmap_BitmapDeserializer.htm">
+        <HelpTOCNode Id="75f74d25-d9e0-43a6-8dc1-f15ed2ee525e" Title="Deserialize Method " Url="html/Overload_TAUtil_Gdi_Bitmap_BitmapDeserializer_Deserialize.htm">
+          <HelpTOCNode Title="Deserialize Method (Byte[], Int32, Int32)" Url="html/M_TAUtil_Gdi_Bitmap_BitmapDeserializer_Deserialize.htm" />
+          <HelpTOCNode Title="Deserialize Method (Stream, Int32, Int32)" Url="html/M_TAUtil_Gdi_Bitmap_BitmapDeserializer_Deserialize_1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1707d149-52d3-4224-9dcc-06ce080a2d55" Title="BitmapSerializer Class" Url="html/T_TAUtil_Gdi_Bitmap_BitmapSerializer.htm">
+      <HelpTOCNode Title="BitmapSerializer Constructor " Url="html/M_TAUtil_Gdi_Bitmap_BitmapSerializer__ctor.htm" />
+      <HelpTOCNode Id="95a08077-b0b6-46f2-ab32-b5ee51bf8976" Title="BitmapSerializer Methods" Url="html/Methods_T_TAUtil_Gdi_Bitmap_BitmapSerializer.htm">
+        <HelpTOCNode Title="Serialize Method " Url="html/M_TAUtil_Gdi_Bitmap_BitmapSerializer_Serialize.htm" />
+        <HelpTOCNode Title="ToBytes Method " Url="html/M_TAUtil_Gdi_Bitmap_BitmapSerializer_ToBytes.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="a3763fbb-0d49-4d80-b337-4be11b22c327" Title="TAUtil.Gdi.Palette" Url="html/N_TAUtil_Gdi_Palette.htm">
+    <HelpTOCNode Id="887af58c-3209-42fa-b0d4-89e9d423151b" Title="ArrayPalette Class" Url="html/T_TAUtil_Gdi_Palette_ArrayPalette.htm">
+      <HelpTOCNode Title="ArrayPalette Constructor " Url="html/M_TAUtil_Gdi_Palette_ArrayPalette__ctor.htm" />
+      <HelpTOCNode Id="55eab17f-7b54-4962-a83a-02b9333afb7b" Title="ArrayPalette Methods" Url="html/Methods_T_TAUtil_Gdi_Palette_ArrayPalette.htm">
+        <HelpTOCNode Title="GetEnumerator Method " Url="html/M_TAUtil_Gdi_Palette_ArrayPalette_GetEnumerator.htm" />
+        <HelpTOCNode Title="GetNearest Method " Url="html/M_TAUtil_Gdi_Palette_ArrayPalette_GetNearest.htm" />
+        <HelpTOCNode Title="LookUp Method " Url="html/M_TAUtil_Gdi_Palette_ArrayPalette_LookUp.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="46704ec3-bba3-45c3-ab28-db5aa52a293a" Title="ArrayPalette Properties" Url="html/Properties_T_TAUtil_Gdi_Palette_ArrayPalette.htm">
+        <HelpTOCNode Title="Count Property " Url="html/P_TAUtil_Gdi_Palette_ArrayPalette_Count.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/P_TAUtil_Gdi_Palette_ArrayPalette_Item.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9059028a-c8bf-47a7-9a50-df96dc0b8db8" Title="BinaryPaletteReader Class" Url="html/T_TAUtil_Gdi_Palette_BinaryPaletteReader.htm">
+      <HelpTOCNode Title="BinaryPaletteReader Constructor " Url="html/M_TAUtil_Gdi_Palette_BinaryPaletteReader__ctor.htm" />
+      <HelpTOCNode Id="243acc3d-2e79-4563-bd03-30fe18fd89d1" Title="BinaryPaletteReader Methods" Url="html/Methods_T_TAUtil_Gdi_Palette_BinaryPaletteReader.htm">
+        <HelpTOCNode Id="ac14b22c-28b1-49b4-abaf-a1ffddf1ba8c" Title="Dispose Method " Url="html/Overload_TAUtil_Gdi_Palette_BinaryPaletteReader_Dispose.htm">
+          <HelpTOCNode Title="Dispose Method " Url="html/M_TAUtil_Gdi_Palette_BinaryPaletteReader_Dispose.htm" />
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/M_TAUtil_Gdi_Palette_BinaryPaletteReader_Dispose_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ReadColor Method " Url="html/M_TAUtil_Gdi_Palette_BinaryPaletteReader_ReadColor.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4ba27722-192c-463b-ab33-c175df545764" Title="IPalette Interface" Url="html/T_TAUtil_Gdi_Palette_IPalette.htm">
+      <HelpTOCNode Id="5d6c7f32-5b1e-49de-93aa-fa877f7852cd" Title="IPalette Methods" Url="html/Methods_T_TAUtil_Gdi_Palette_IPalette.htm">
+        <HelpTOCNode Title="GetNearest Method " Url="html/M_TAUtil_Gdi_Palette_IPalette_GetNearest.htm" />
+        <HelpTOCNode Title="LookUp Method " Url="html/M_TAUtil_Gdi_Palette_IPalette_LookUp.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="546626a3-92db-49c3-b180-09df1eab2346" Title="IPalette Properties" Url="html/Properties_T_TAUtil_Gdi_Palette_IPalette.htm">
+        <HelpTOCNode Title="Count Property " Url="html/P_TAUtil_Gdi_Palette_IPalette_Count.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/P_TAUtil_Gdi_Palette_IPalette_Item.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c61ed5a5-82be-4ff8-96da-2d4b25f724a2" Title="PaletteFactory Class" Url="html/T_TAUtil_Gdi_Palette_PaletteFactory.htm">
+      <HelpTOCNode Id="b8785f65-1e2a-4cc7-bf05-28ff3e9f255f" Title="PaletteFactory Fields" Url="html/Fields_T_TAUtil_Gdi_Palette_PaletteFactory.htm">
+        <HelpTOCNode Title="TAPalette Field" Url="html/F_TAUtil_Gdi_Palette_PaletteFactory_TAPalette.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8f22b699-6948-45b4-abe4-10576c2acf7e" Title="PaletteFactory Methods" Url="html/Methods_T_TAUtil_Gdi_Palette_PaletteFactory.htm">
+        <HelpTOCNode Title="FromBinaryPal Method " Url="html/M_TAUtil_Gdi_Palette_PaletteFactory_FromBinaryPal.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f583bffb-5b68-4051-b8b7-17b6aad12840" Title="Quantization Class" Url="html/T_TAUtil_Gdi_Palette_Quantization.htm">
+      <HelpTOCNode Id="917b1407-ed8f-4eba-934d-86fd0d609cc9" Title="Quantization Methods" Url="html/Methods_T_TAUtil_Gdi_Palette_Quantization.htm">
+        <HelpTOCNode Title="ToTAPalette Method " Url="html/M_TAUtil_Gdi_Palette_Quantization_ToTAPalette.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="20bbccc6-1f33-466d-9790-de298374cd02" Title="TransparencyMaskedPalette Class" Url="html/T_TAUtil_Gdi_Palette_TransparencyMaskedPalette.htm">
+      <HelpTOCNode Title="TransparencyMaskedPalette Constructor " Url="html/M_TAUtil_Gdi_Palette_TransparencyMaskedPalette__ctor.htm" />
+      <HelpTOCNode Id="67d73671-41c6-4a25-bbf2-cb7c2ac5fdda" Title="TransparencyMaskedPalette Methods" Url="html/Methods_T_TAUtil_Gdi_Palette_TransparencyMaskedPalette.htm">
+        <HelpTOCNode Title="GetEnumerator Method " Url="html/M_TAUtil_Gdi_Palette_TransparencyMaskedPalette_GetEnumerator.htm" />
+        <HelpTOCNode Title="GetNearest Method " Url="html/M_TAUtil_Gdi_Palette_TransparencyMaskedPalette_GetNearest.htm" />
+        <HelpTOCNode Title="LookUp Method " Url="html/M_TAUtil_Gdi_Palette_TransparencyMaskedPalette_LookUp.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="380c79fb-c377-4db5-86f6-41e8a794b222" Title="TransparencyMaskedPalette Properties" Url="html/Properties_T_TAUtil_Gdi_Palette_TransparencyMaskedPalette.htm">
+        <HelpTOCNode Title="Count Property " Url="html/P_TAUtil_Gdi_Palette_TransparencyMaskedPalette_Count.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/P_TAUtil_Gdi_Palette_TransparencyMaskedPalette_Item.htm" />
+        <HelpTOCNode Title="TransparencyIndex Property " Url="html/P_TAUtil_Gdi_Palette_TransparencyMaskedPalette_TransparencyIndex.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="ca0ac69a-e4e8-4864-9842-b1cdce8c57ae" Title="TAUtil.Hpi" Url="html/N_TAUtil_Hpi.htm">
+    <HelpTOCNode Id="cb7dbaeb-3465-473b-95eb-e3eacbbd66f2" Title="HpiEntry Structure" Url="html/T_TAUtil_Hpi_HpiEntry.htm">
+      <HelpTOCNode Title="HpiEntry Constructor " Url="html/M_TAUtil_Hpi_HpiEntry__ctor.htm" />
+      <HelpTOCNode Title="HpiEntry Methods" Url="html/Methods_T_TAUtil_Hpi_HpiEntry.htm" />
+      <HelpTOCNode Id="d215f6db-06dc-48c8-a56f-8878f8d2e162" Title="HpiEntry Properties" Url="html/Properties_T_TAUtil_Hpi_HpiEntry.htm">
+        <HelpTOCNode Title="Name Property " Url="html/P_TAUtil_Hpi_HpiEntry_Name.htm" />
+        <HelpTOCNode Title="Size Property " Url="html/P_TAUtil_Hpi_HpiEntry_Size.htm" />
+        <HelpTOCNode Title="Type Property " Url="html/P_TAUtil_Hpi_HpiEntry_Type.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="HpiEntry.FileType Enumeration" Url="html/T_TAUtil_Hpi_HpiEntry_FileType.htm" />
+    <HelpTOCNode Id="8e49de7c-de6d-40b7-8525-71380ddc94d2" Title="HpiPath Class" Url="html/T_TAUtil_Hpi_HpiPath.htm">
+      <HelpTOCNode Id="dfb9a8e6-12e5-4a42-a780-781917cf3da8" Title="HpiPath Fields" Url="html/Fields_T_TAUtil_Hpi_HpiPath.htm">
+        <HelpTOCNode Title="AltDirectorySeparatorChar Field" Url="html/F_TAUtil_Hpi_HpiPath_AltDirectorySeparatorChar.htm" />
+        <HelpTOCNode Title="DirectorySeparatorChar Field" Url="html/F_TAUtil_Hpi_HpiPath_DirectorySeparatorChar.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="622b253b-7344-4903-8bc8-0a4070f6c7a0" Title="HpiPath Methods" Url="html/Methods_T_TAUtil_Hpi_HpiPath.htm">
+        <HelpTOCNode Title="ChangeExtension Method " Url="html/M_TAUtil_Hpi_HpiPath_ChangeExtension.htm" />
+        <HelpTOCNode Title="Combine Method " Url="html/M_TAUtil_Hpi_HpiPath_Combine.htm" />
+        <HelpTOCNode Title="GetDirectoryName Method " Url="html/M_TAUtil_Hpi_HpiPath_GetDirectoryName.htm" />
+        <HelpTOCNode Title="GetExtension Method " Url="html/M_TAUtil_Hpi_HpiPath_GetExtension.htm" />
+        <HelpTOCNode Title="GetFileName Method " Url="html/M_TAUtil_Hpi_HpiPath_GetFileName.htm" />
+        <HelpTOCNode Title="GetFileNameWithoutExtension Method " Url="html/M_TAUtil_Hpi_HpiPath_GetFileNameWithoutExtension.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d5eb11cc-3128-44d8-b25e-3dfeb68bfb28" Title="HpiReader Class" Url="html/T_TAUtil_Hpi_HpiReader.htm">
+      <HelpTOCNode Title="HpiReader Constructor " Url="html/M_TAUtil_Hpi_HpiReader__ctor.htm" />
+      <HelpTOCNode Id="36cc09ee-d71d-4c45-8212-81ecc1f24f57" Title="HpiReader Methods" Url="html/Methods_T_TAUtil_Hpi_HpiReader.htm">
+        <HelpTOCNode Title="Close Method " Url="html/M_TAUtil_Hpi_HpiReader_Close.htm" />
+        <HelpTOCNode Title="Dispose Method " Url="html/M_TAUtil_Hpi_HpiReader_Dispose.htm" />
+        <HelpTOCNode Title="ExtractFile Method " Url="html/M_TAUtil_Hpi_HpiReader_ExtractFile.htm" />
+        <HelpTOCNode Title="GetDirectories Method " Url="html/M_TAUtil_Hpi_HpiReader_GetDirectories.htm" />
+        <HelpTOCNode Id="ac03039b-7ef4-45ad-a15a-e5d608317d38" Title="GetFiles Method " Url="html/Overload_TAUtil_Hpi_HpiReader_GetFiles.htm">
+          <HelpTOCNode Title="GetFiles Method " Url="html/M_TAUtil_Hpi_HpiReader_GetFiles.htm" />
+          <HelpTOCNode Title="GetFiles Method (String)" Url="html/M_TAUtil_Hpi_HpiReader_GetFiles_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetFilesAndDirectories Method " Url="html/M_TAUtil_Hpi_HpiReader_GetFilesAndDirectories.htm" />
+        <HelpTOCNode Id="85c5099c-4bd1-4291-9acb-b79b9b7b6de1" Title="GetFilesRecursive Method " Url="html/Overload_TAUtil_Hpi_HpiReader_GetFilesRecursive.htm">
+          <HelpTOCNode Title="GetFilesRecursive Method " Url="html/M_TAUtil_Hpi_HpiReader_GetFilesRecursive.htm" />
+          <HelpTOCNode Title="GetFilesRecursive Method (String)" Url="html/M_TAUtil_Hpi_HpiReader_GetFilesRecursive_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ReadFile Method " Url="html/M_TAUtil_Hpi_HpiReader_ReadFile.htm" />
+        <HelpTOCNode Title="ReadTextFile Method " Url="html/M_TAUtil_Hpi_HpiReader_ReadTextFile.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0045e188-2c5f-447f-af6e-479e89e634a3" Title="HpiReader Properties" Url="html/Properties_T_TAUtil_Hpi_HpiReader.htm">
+        <HelpTOCNode Title="FileName Property " Url="html/P_TAUtil_Hpi_HpiReader_FileName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="aa6cec40-38eb-46d9-bd15-793da87ac349" Title="HpiWriter Class" Url="html/T_TAUtil_Hpi_HpiWriter.htm">
+      <HelpTOCNode Title="HpiWriter Constructor " Url="html/M_TAUtil_Hpi_HpiWriter__ctor.htm" />
+      <HelpTOCNode Id="902148bc-3192-405c-85fc-5a80859f5688" Title="HpiWriter Methods" Url="html/Methods_T_TAUtil_Hpi_HpiWriter.htm">
+        <HelpTOCNode Title="AddFile Method " Url="html/M_TAUtil_Hpi_HpiWriter_AddFile.htm" />
+        <HelpTOCNode Title="Close Method " Url="html/M_TAUtil_Hpi_HpiWriter_Close.htm" />
+        <HelpTOCNode Title="CreateDirectory Method " Url="html/M_TAUtil_Hpi_HpiWriter_CreateDirectory.htm" />
+        <HelpTOCNode Title="Dispose Method " Url="html/M_TAUtil_Hpi_HpiWriter_Dispose.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="HpiWriter.CompressionMethod Enumeration" Url="html/T_TAUtil_Hpi_HpiWriter_CompressionMethod.htm" />
+    <HelpTOCNode Title="HpiWriter.HpiCallback Delegate" Url="html/T_TAUtil_Hpi_HpiWriter_HpiCallback.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="1b49d775-265c-43db-b9d3-d5309404c653" Title="TAUtil.Sct" Url="html/N_TAUtil_Sct.htm">
+    <HelpTOCNode Id="1430b39d-94b8-47c9-813a-3a4e33b870a2" Title="ISctSource Interface" Url="html/T_TAUtil_Sct_ISctSource.htm">
+      <HelpTOCNode Id="75e0d55f-6f7c-4c53-acc7-00bf65315d0e" Title="ISctSource Methods" Url="html/Methods_T_TAUtil_Sct_ISctSource.htm">
+        <HelpTOCNode Title="EnumerateAttrs Method " Url="html/M_TAUtil_Sct_ISctSource_EnumerateAttrs.htm" />
+        <HelpTOCNode Title="EnumerateData Method " Url="html/M_TAUtil_Sct_ISctSource_EnumerateData.htm" />
+        <HelpTOCNode Title="EnumerateTiles Method " Url="html/M_TAUtil_Sct_ISctSource_EnumerateTiles.htm" />
+        <HelpTOCNode Title="GetMinimap Method " Url="html/M_TAUtil_Sct_ISctSource_GetMinimap.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ead33f28-ad6a-4cb3-935c-d80ef2ed47d5" Title="ISctSource Properties" Url="html/Properties_T_TAUtil_Sct_ISctSource.htm">
+        <HelpTOCNode Title="DataHeight Property " Url="html/P_TAUtil_Sct_ISctSource_DataHeight.htm" />
+        <HelpTOCNode Title="DataWidth Property " Url="html/P_TAUtil_Sct_ISctSource_DataWidth.htm" />
+        <HelpTOCNode Title="TileCount Property " Url="html/P_TAUtil_Sct_ISctSource_TileCount.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d15ff5e3-f5e5-4563-959d-4ff742215ac5" Title="SctReader Class" Url="html/T_TAUtil_Sct_SctReader.htm">
+      <HelpTOCNode Id="1755aade-e7ef-488d-bd78-de38ed07940f" Title="SctReader Constructor " Url="html/Overload_TAUtil_Sct_SctReader__ctor.htm">
+        <HelpTOCNode Title="SctReader Constructor (BinaryReader)" Url="html/M_TAUtil_Sct_SctReader__ctor.htm" />
+        <HelpTOCNode Title="SctReader Constructor (Stream)" Url="html/M_TAUtil_Sct_SctReader__ctor_1.htm" />
+        <HelpTOCNode Title="SctReader Constructor (String)" Url="html/M_TAUtil_Sct_SctReader__ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="964a25c2-5ad5-404e-8252-b4279d7ffa0e" Title="SctReader Fields" Url="html/Fields_T_TAUtil_Sct_SctReader.htm">
+        <HelpTOCNode Title="MinimapHeight Field" Url="html/F_TAUtil_Sct_SctReader_MinimapHeight.htm" />
+        <HelpTOCNode Title="MinimapWidth Field" Url="html/F_TAUtil_Sct_SctReader_MinimapWidth.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="909731bf-3eb5-4219-bc22-0507d43b034a" Title="SctReader Methods" Url="html/Methods_T_TAUtil_Sct_SctReader.htm">
+        <HelpTOCNode Id="6e5debea-6de6-4175-9eb7-549b12fd0da4" Title="Dispose Method " Url="html/Overload_TAUtil_Sct_SctReader_Dispose.htm">
+          <HelpTOCNode Title="Dispose Method " Url="html/M_TAUtil_Sct_SctReader_Dispose.htm" />
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/M_TAUtil_Sct_SctReader_Dispose_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="EnumerateAttrs Method " Url="html/M_TAUtil_Sct_SctReader_EnumerateAttrs.htm" />
+        <HelpTOCNode Title="EnumerateData Method " Url="html/M_TAUtil_Sct_SctReader_EnumerateData.htm" />
+        <HelpTOCNode Title="EnumerateTiles Method " Url="html/M_TAUtil_Sct_SctReader_EnumerateTiles.htm" />
+        <HelpTOCNode Title="GetMinimap Method " Url="html/M_TAUtil_Sct_SctReader_GetMinimap.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ce50a021-e11a-415a-a0c2-3752ab4c9898" Title="SctReader Properties" Url="html/Properties_T_TAUtil_Sct_SctReader.htm">
+        <HelpTOCNode Title="DataHeight Property " Url="html/P_TAUtil_Sct_SctReader_DataHeight.htm" />
+        <HelpTOCNode Title="DataWidth Property " Url="html/P_TAUtil_Sct_SctReader_DataWidth.htm" />
+        <HelpTOCNode Title="HeightInAttrs Property " Url="html/P_TAUtil_Sct_SctReader_HeightInAttrs.htm" />
+        <HelpTOCNode Title="TileCount Property " Url="html/P_TAUtil_Sct_SctReader_TileCount.htm" />
+        <HelpTOCNode Title="WidthInAttrs Property " Url="html/P_TAUtil_Sct_SctReader_WidthInAttrs.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="797f075c-bbd1-4203-a626-1a8d327423fc" Title="SctWriter Class" Url="html/T_TAUtil_Sct_SctWriter.htm">
+      <HelpTOCNode Id="f364f738-5bc6-43c2-be78-8b9a6a6447e4" Title="SctWriter Constructor " Url="html/Overload_TAUtil_Sct_SctWriter__ctor.htm">
+        <HelpTOCNode Title="SctWriter Constructor (BinaryWriter)" Url="html/M_TAUtil_Sct_SctWriter__ctor.htm" />
+        <HelpTOCNode Title="SctWriter Constructor (Stream)" Url="html/M_TAUtil_Sct_SctWriter__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="40c54615-5a8b-4258-b58d-ceb9bccb21a6" Title="SctWriter Methods" Url="html/Methods_T_TAUtil_Sct_SctWriter.htm">
+        <HelpTOCNode Id="1aaa4355-c7fc-43fa-b844-f2c2c8f971c2" Title="Dispose Method " Url="html/Overload_TAUtil_Sct_SctWriter_Dispose.htm">
+          <HelpTOCNode Title="Dispose Method " Url="html/M_TAUtil_Sct_SctWriter_Dispose.htm" />
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/M_TAUtil_Sct_SctWriter_Dispose_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="WriteSct Method " Url="html/M_TAUtil_Sct_SctWriter_WriteSct.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="c1f2e98b-3f77-4b63-9b76-7a0739cf277c" Title="TAUtil.Tdf" Url="html/N_TAUtil_Tdf.htm">
+    <HelpTOCNode Id="2fa9c68b-36b3-4a12-8d9d-518a3717730f" Title="ITdfNodeAdapter Interface" Url="html/T_TAUtil_Tdf_ITdfNodeAdapter.htm">
+      <HelpTOCNode Id="e482ba30-30aa-4248-96ab-b9575ba581b7" Title="ITdfNodeAdapter Methods" Url="html/Methods_T_TAUtil_Tdf_ITdfNodeAdapter.htm">
+        <HelpTOCNode Title="AddProperty Method " Url="html/M_TAUtil_Tdf_ITdfNodeAdapter_AddProperty.htm" />
+        <HelpTOCNode Title="BeginBlock Method " Url="html/M_TAUtil_Tdf_ITdfNodeAdapter_BeginBlock.htm" />
+        <HelpTOCNode Title="EndBlock Method " Url="html/M_TAUtil_Tdf_ITdfNodeAdapter_EndBlock.htm" />
+        <HelpTOCNode Title="Initialize Method " Url="html/M_TAUtil_Tdf_ITdfNodeAdapter_Initialize.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="444a90c5-dc3f-4dec-9081-92b43ccc4907" Title="TdfNode Class" Url="html/T_TAUtil_Tdf_TdfNode.htm">
+      <HelpTOCNode Id="649de283-c133-4aff-97c3-a5f8baf56561" Title="TdfNode Constructor " Url="html/Overload_TAUtil_Tdf_TdfNode__ctor.htm">
+        <HelpTOCNode Title="TdfNode Constructor " Url="html/M_TAUtil_Tdf_TdfNode__ctor.htm" />
+        <HelpTOCNode Title="TdfNode Constructor (String)" Url="html/M_TAUtil_Tdf_TdfNode__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9a1d105d-e741-4ea2-ac01-3bbdccaa6f81" Title="TdfNode Methods" Url="html/Methods_T_TAUtil_Tdf_TdfNode.htm">
+        <HelpTOCNode Id="1e31620e-b1dd-4bcf-b3e1-d6c40670cec9" Title="LoadTdf Method " Url="html/Overload_TAUtil_Tdf_TdfNode_LoadTdf.htm">
+          <HelpTOCNode Title="LoadTdf Method (Stream)" Url="html/M_TAUtil_Tdf_TdfNode_LoadTdf.htm" />
+          <HelpTOCNode Title="LoadTdf Method (TextReader)" Url="html/M_TAUtil_Tdf_TdfNode_LoadTdf_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="WriteTdf Method " Url="html/M_TAUtil_Tdf_TdfNode_WriteTdf.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f397124e-0cc5-48eb-be2f-135d883f7b72" Title="TdfNode Properties" Url="html/Properties_T_TAUtil_Tdf_TdfNode.htm">
+        <HelpTOCNode Title="Entries Property " Url="html/P_TAUtil_Tdf_TdfNode_Entries.htm" />
+        <HelpTOCNode Title="Keys Property " Url="html/P_TAUtil_Tdf_TdfNode_Keys.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P_TAUtil_Tdf_TdfNode_Name.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="882d0d88-adba-445f-8d63-fb740e8bde52" Title="TdfNodeAdapter Class" Url="html/T_TAUtil_Tdf_TdfNodeAdapter.htm">
+      <HelpTOCNode Title="TdfNodeAdapter Constructor " Url="html/M_TAUtil_Tdf_TdfNodeAdapter__ctor.htm" />
+      <HelpTOCNode Id="1ed98e13-c577-409d-8830-99240176549c" Title="TdfNodeAdapter Methods" Url="html/Methods_T_TAUtil_Tdf_TdfNodeAdapter.htm">
+        <HelpTOCNode Title="AddProperty Method " Url="html/M_TAUtil_Tdf_TdfNodeAdapter_AddProperty.htm" />
+        <HelpTOCNode Title="BeginBlock Method " Url="html/M_TAUtil_Tdf_TdfNodeAdapter_BeginBlock.htm" />
+        <HelpTOCNode Title="EndBlock Method " Url="html/M_TAUtil_Tdf_TdfNodeAdapter_EndBlock.htm" />
+        <HelpTOCNode Title="Initialize Method " Url="html/M_TAUtil_Tdf_TdfNodeAdapter_Initialize.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="99d14090-5113-4487-8ff4-106cced769c5" Title="TdfNodeAdapter Properties" Url="html/Properties_T_TAUtil_Tdf_TdfNodeAdapter.htm">
+        <HelpTOCNode Title="RootNode Property " Url="html/P_TAUtil_Tdf_TdfNodeAdapter_RootNode.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="21e918a3-f313-47e5-b91d-7ed32068c095" Title="TdfParser Class" Url="html/T_TAUtil_Tdf_TdfParser.htm">
+      <HelpTOCNode Id="ff9fc33a-427d-4c56-a044-73d1ea02a3f4" Title="TdfParser Constructor " Url="html/Overload_TAUtil_Tdf_TdfParser__ctor.htm">
+        <HelpTOCNode Title="TdfParser Constructor (Stream, ITdfNodeAdapter)" Url="html/M_TAUtil_Tdf_TdfParser__ctor.htm" />
+        <HelpTOCNode Title="TdfParser Constructor (TextReader, ITdfNodeAdapter)" Url="html/M_TAUtil_Tdf_TdfParser__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c1771a4e-6348-4d21-8f1c-201ddefbdac9" Title="TdfParser Methods" Url="html/Methods_T_TAUtil_Tdf_TdfParser.htm">
+        <HelpTOCNode Title="Load Method " Url="html/M_TAUtil_Tdf_TdfParser_Load.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5ac12b6a-d5f3-4663-97e2-bbe8fed53ca2" Title="TdfParser Properties" Url="html/Properties_T_TAUtil_Tdf_TdfParser.htm">
+        <HelpTOCNode Title="CurrentColumn Property " Url="html/P_TAUtil_Tdf_TdfParser_CurrentColumn.htm" />
+        <HelpTOCNode Title="CurrentLine Property " Url="html/P_TAUtil_Tdf_TdfParser_CurrentLine.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="ed80f77d-4b9f-4c53-93b0-1e8566d4bccf" Title="TAUtil.Tnt" Url="html/N_TAUtil_Tnt.htm">
+    <HelpTOCNode Id="0dd58f21-c5f0-4125-9abd-d6aea77ced1a" Title="ITntSource Interface" Url="html/T_TAUtil_Tnt_ITntSource.htm">
+      <HelpTOCNode Id="c00df7b0-25df-4ed6-ab25-bfa6cd3d5110" Title="ITntSource Methods" Url="html/Methods_T_TAUtil_Tnt_ITntSource.htm">
+        <HelpTOCNode Title="EnumerateAnims Method " Url="html/M_TAUtil_Tnt_ITntSource_EnumerateAnims.htm" />
+        <HelpTOCNode Title="EnumerateAttrs Method " Url="html/M_TAUtil_Tnt_ITntSource_EnumerateAttrs.htm" />
+        <HelpTOCNode Title="EnumerateData Method " Url="html/M_TAUtil_Tnt_ITntSource_EnumerateData.htm" />
+        <HelpTOCNode Title="EnumerateTiles Method " Url="html/M_TAUtil_Tnt_ITntSource_EnumerateTiles.htm" />
+        <HelpTOCNode Title="GetMinimap Method " Url="html/M_TAUtil_Tnt_ITntSource_GetMinimap.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f836119f-9224-43c7-a77a-15f5f9eca8ae" Title="ITntSource Properties" Url="html/Properties_T_TAUtil_Tnt_ITntSource.htm">
+        <HelpTOCNode Title="AnimCount Property " Url="html/P_TAUtil_Tnt_ITntSource_AnimCount.htm" />
+        <HelpTOCNode Title="DataHeight Property " Url="html/P_TAUtil_Tnt_ITntSource_DataHeight.htm" />
+        <HelpTOCNode Title="DataWidth Property " Url="html/P_TAUtil_Tnt_ITntSource_DataWidth.htm" />
+        <HelpTOCNode Title="SeaLevel Property " Url="html/P_TAUtil_Tnt_ITntSource_SeaLevel.htm" />
+        <HelpTOCNode Title="TileCount Property " Url="html/P_TAUtil_Tnt_ITntSource_TileCount.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="66bd7808-3ca2-4c40-aaac-b713428cb051" Title="MinimapInfo Class" Url="html/T_TAUtil_Tnt_MinimapInfo.htm">
+      <HelpTOCNode Title="MinimapInfo Constructor " Url="html/M_TAUtil_Tnt_MinimapInfo__ctor.htm" />
+      <HelpTOCNode Title="MinimapInfo Methods" Url="html/Methods_T_TAUtil_Tnt_MinimapInfo.htm" />
+      <HelpTOCNode Id="0c8b98b8-41f8-478d-8476-edcb25e3724b" Title="MinimapInfo Properties" Url="html/Properties_T_TAUtil_Tnt_MinimapInfo.htm">
+        <HelpTOCNode Title="Data Property " Url="html/P_TAUtil_Tnt_MinimapInfo_Data.htm" />
+        <HelpTOCNode Title="Height Property " Url="html/P_TAUtil_Tnt_MinimapInfo_Height.htm" />
+        <HelpTOCNode Title="Width Property " Url="html/P_TAUtil_Tnt_MinimapInfo_Width.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ec94f364-7480-40e7-96e0-c2a00a4b0a56" Title="TileAttr Structure" Url="html/T_TAUtil_Tnt_TileAttr.htm">
+      <HelpTOCNode Id="26acf4ee-f5b7-4503-9ab9-455acb6ba9d2" Title="TileAttr Fields" Url="html/Fields_T_TAUtil_Tnt_TileAttr.htm">
+        <HelpTOCNode Title="AttrLength Field" Url="html/F_TAUtil_Tnt_TileAttr_AttrLength.htm" />
+        <HelpTOCNode Title="Feature Field" Url="html/F_TAUtil_Tnt_TileAttr_Feature.htm" />
+        <HelpTOCNode Title="FeatureNone Field" Url="html/F_TAUtil_Tnt_TileAttr_FeatureNone.htm" />
+        <HelpTOCNode Title="FeatureUnknown Field" Url="html/F_TAUtil_Tnt_TileAttr_FeatureUnknown.htm" />
+        <HelpTOCNode Title="FeatureVoid Field" Url="html/F_TAUtil_Tnt_TileAttr_FeatureVoid.htm" />
+        <HelpTOCNode Title="Height Field" Url="html/F_TAUtil_Tnt_TileAttr_Height.htm" />
+        <HelpTOCNode Title="Pad1 Field" Url="html/F_TAUtil_Tnt_TileAttr_Pad1.htm" />
+        <HelpTOCNode Title="SctVersion2AttrLength Field" Url="html/F_TAUtil_Tnt_TileAttr_SctVersion2AttrLength.htm" />
+        <HelpTOCNode Title="SctVersion3AttrLength Field" Url="html/F_TAUtil_Tnt_TileAttr_SctVersion3AttrLength.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="TileAttr Methods" Url="html/Methods_T_TAUtil_Tnt_TileAttr.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="669e4c11-bfbf-403c-a764-a3127e9fd18b" Title="TntConstants Class" Url="html/T_TAUtil_Tnt_TntConstants.htm">
+      <HelpTOCNode Id="cda30632-a34d-4c86-b983-49b7be27016f" Title="TntConstants Fields" Url="html/Fields_T_TAUtil_Tnt_TntConstants.htm">
+        <HelpTOCNode Title="AnimNameLength Field" Url="html/F_TAUtil_Tnt_TntConstants_AnimNameLength.htm" />
+        <HelpTOCNode Title="MaxMinimapHeight Field" Url="html/F_TAUtil_Tnt_TntConstants_MaxMinimapHeight.htm" />
+        <HelpTOCNode Title="MaxMinimapWidth Field" Url="html/F_TAUtil_Tnt_TntConstants_MaxMinimapWidth.htm" />
+        <HelpTOCNode Title="MinimapVoidByte Field" Url="html/F_TAUtil_Tnt_TntConstants_MinimapVoidByte.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="12880bb5-7e83-44e4-b9fe-9528477a629c" Title="TntReader Class" Url="html/T_TAUtil_Tnt_TntReader.htm">
+      <HelpTOCNode Id="50996e88-fbd1-4d4c-a30d-25304b333a12" Title="TntReader Constructor " Url="html/Overload_TAUtil_Tnt_TntReader__ctor.htm">
+        <HelpTOCNode Title="TntReader Constructor (BinaryReader)" Url="html/M_TAUtil_Tnt_TntReader__ctor.htm" />
+        <HelpTOCNode Title="TntReader Constructor (Stream)" Url="html/M_TAUtil_Tnt_TntReader__ctor_1.htm" />
+        <HelpTOCNode Title="TntReader Constructor (String)" Url="html/M_TAUtil_Tnt_TntReader__ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="262c9691-857a-4916-81f5-9032fe9c4293" Title="TntReader Methods" Url="html/Methods_T_TAUtil_Tnt_TntReader.htm">
+        <HelpTOCNode Id="3363d689-edd6-4851-8398-356e60f42dee" Title="Dispose Method " Url="html/Overload_TAUtil_Tnt_TntReader_Dispose.htm">
+          <HelpTOCNode Title="Dispose Method " Url="html/M_TAUtil_Tnt_TntReader_Dispose.htm" />
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/M_TAUtil_Tnt_TntReader_Dispose_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="EnumerateAnims Method " Url="html/M_TAUtil_Tnt_TntReader_EnumerateAnims.htm" />
+        <HelpTOCNode Title="EnumerateAttrs Method " Url="html/M_TAUtil_Tnt_TntReader_EnumerateAttrs.htm" />
+        <HelpTOCNode Title="EnumerateData Method " Url="html/M_TAUtil_Tnt_TntReader_EnumerateData.htm" />
+        <HelpTOCNode Title="EnumerateTiles Method " Url="html/M_TAUtil_Tnt_TntReader_EnumerateTiles.htm" />
+        <HelpTOCNode Title="GetMinimap Method " Url="html/M_TAUtil_Tnt_TntReader_GetMinimap.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b5af8ff7-5797-49d7-b87d-43d80f7ab8a6" Title="TntReader Properties" Url="html/Properties_T_TAUtil_Tnt_TntReader.htm">
+        <HelpTOCNode Title="AnimCount Property " Url="html/P_TAUtil_Tnt_TntReader_AnimCount.htm" />
+        <HelpTOCNode Title="DataHeight Property " Url="html/P_TAUtil_Tnt_TntReader_DataHeight.htm" />
+        <HelpTOCNode Title="DataWidth Property " Url="html/P_TAUtil_Tnt_TntReader_DataWidth.htm" />
+        <HelpTOCNode Title="Height Property " Url="html/P_TAUtil_Tnt_TntReader_Height.htm" />
+        <HelpTOCNode Title="SeaLevel Property " Url="html/P_TAUtil_Tnt_TntReader_SeaLevel.htm" />
+        <HelpTOCNode Title="TileCount Property " Url="html/P_TAUtil_Tnt_TntReader_TileCount.htm" />
+        <HelpTOCNode Title="Width Property " Url="html/P_TAUtil_Tnt_TntReader_Width.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a7bf089e-243a-454e-bf1c-c0b230be7827" Title="TntWriter Class" Url="html/T_TAUtil_Tnt_TntWriter.htm">
+      <HelpTOCNode Id="7dfe1d78-568d-41d6-8459-4ad57db96c00" Title="TntWriter Constructor " Url="html/Overload_TAUtil_Tnt_TntWriter__ctor.htm">
+        <HelpTOCNode Title="TntWriter Constructor (BinaryWriter)" Url="html/M_TAUtil_Tnt_TntWriter__ctor.htm" />
+        <HelpTOCNode Title="TntWriter Constructor (Stream)" Url="html/M_TAUtil_Tnt_TntWriter__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="213d8684-d511-48d0-b44b-75fc557a43ee" Title="TntWriter Methods" Url="html/Methods_T_TAUtil_Tnt_TntWriter.htm">
+        <HelpTOCNode Id="f591f1e8-b8cb-415c-b9db-e7df0dc11770" Title="Dispose Method " Url="html/Overload_TAUtil_Tnt_TntWriter_Dispose.htm">
+          <HelpTOCNode Title="Dispose Method " Url="html/M_TAUtil_Tnt_TntWriter_Dispose.htm" />
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/M_TAUtil_Tnt_TntWriter_Dispose_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="WriteTnt Method " Url="html/M_TAUtil_Tnt_TntWriter_WriteTnt.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
