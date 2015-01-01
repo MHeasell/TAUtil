@@ -17,7 +17,6 @@ Additionally, there is read-only support for:
 *NOTE:* TAUtil is not yet stable.
 Its public interface is likely to change between releases
 until a stable version is reached,
-and classes/methods are not yet well documented.
 
 ## Documentation
 
