@@ -18,3 +18,9 @@ Additionally, there is read-only support for:
 Its public interface is likely to change between releases
 until a stable version is reached,
 and classes/methods are not yet well documented.
+
+## Documentation
+
+An online API reference can be found on the project site:
+
+http://armouredfish.github.io/TAUtil/
