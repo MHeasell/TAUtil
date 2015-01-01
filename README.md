@@ -12,7 +12,7 @@ Support is provided for reading and writing:
 
 Additionally, there is read-only support for:
 * 3DO models
-* GAF files
+* GAF animations
 
 *NOTE:* TAUtil is not yet stable.
 Its public interface is likely to change between releases
