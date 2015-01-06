@@ -4,24 +4,26 @@
     using System.IO;
 
     /// <summary>
-    /// <para>
-    /// This class represents an unmanaged memory stream with unbounded length(!).
-    /// This stream doesn't know how long it is, so it's trivial to read
-    /// over the end of the buffer and land in unknown memory.
-    /// </para>
-    /// <para>
-    /// Very dangerous! Use with caution.
-    /// </para>
+    /// This class represents an unmanaged memory stream.
+    /// It is used when reading files from a HPI archive.
     /// </summary>
+    /// <remarks>
+    /// If no length is passed during construction,
+    /// this stream will have unbounded length.
+    /// In this case, it is possible to read past the end of the stream
+    /// and into unknown memory.
+    /// </remarks>
     internal unsafe sealed class HpiStream : Stream
     {
         private readonly IntPtr ptr;
         private readonly byte* hpiFileHandle;
+        private readonly long length;
 
-        public HpiStream(IntPtr ptr)
+        public HpiStream(IntPtr ptr, long length = -1)
         {
             this.ptr = ptr;
             this.hpiFileHandle = (byte*)ptr.ToPointer();
+            this.length = length;
         }
 
         public bool StopAtNull
@@ -47,7 +49,15 @@
 
         public override long Length
         {
-            get { throw new NotSupportedException(); }
+            get
+            {
+                if (this.length == -1)
+                {
+                    throw new NotSupportedException();
+                }
+
+                return this.length;
+            }
         }
 
         public override long Position
@@ -65,7 +75,15 @@
         {
             for (int i = 0; i < count; i++)
             {
+                // If we have a length, don't overrun it.
+                if (this.length != -1 && this.Position >= this.length)
+                {
+                    return i;
+                }
+
                 byte b = this.hpiFileHandle[this.Position];
+
+                // If we're a text buffer, don't go past null.
                 if (this.StopAtNull && b == 0)
                 {
                     return i;
@@ -80,8 +98,15 @@
 
         public override int ReadByte()
         {
+            // If we have a length, don't overrun it.
+            if (this.length != -1 && this.Position >= this.length)
+            {
+                return -1;
+            }
+
             byte b = this.hpiFileHandle[this.Position];
 
+            // if we're a text buffer, don't go past null.
             if (this.StopAtNull && b == 0)
             {
                 return -1;
@@ -102,7 +127,13 @@
                     this.Position += offset;
                     break;
                 case SeekOrigin.End:
-                    throw new NotSupportedException("cannot seek from end of stream");
+                    if (this.length == -1)
+                    {
+                        throw new NotSupportedException("cannot seek from end of stream");
+                    }
+
+                    this.Position = this.length - offset;
+                    break;
                 default:
                     throw new ArgumentException("invalid seek origin");
             }

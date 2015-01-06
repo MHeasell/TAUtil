@@ -1,20 +1,24 @@
 ﻿namespace TAUtil.Hpi
 {
+    using System;
+    using System.IO;
+
     /// <summary>
-    /// Data structure representing a directory entry
+    /// Represents a file a directory entry
     /// inside a HPI archive.
     /// </summary>
-    public struct HpiEntry
+    public class HpiEntry
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="HpiEntry"/> struct.
+        /// Initializes a new instance of the <see cref="HpiEntry"/> class.
         /// </summary>
+        /// <param name="reader">The HPI archive the entry belongs to.</param>
         /// <param name="name">The name of the file or directory.</param>
         /// <param name="type">The type of the entry.</param>
         /// <param name="size">The size of the entry if it is a file.</param>
-        public HpiEntry(string name, FileType type, int size)
-            : this()
+        internal HpiEntry(HpiReader reader, string name, FileType type, int size)
         {
+            this.Reader = reader;
             this.Name = name;
             this.Type = type;
             this.Size = size;
@@ -37,18 +41,37 @@
         }
 
         /// <summary>
-        /// Gets or sets the name of the file or directory.
+        /// Gets the HPI archive the entry is in.
         /// </summary>
-        public string Name { get; set; }
+        public HpiReader Reader { get; private set; }
 
         /// <summary>
-        /// Gets or sets the type of the HPI entry.
+        /// Gets the name of the file or directory.
         /// </summary>
-        public FileType Type { get; set; }
+        public string Name { get; private set; }
 
         /// <summary>
-        /// Gets or sets the size of the entry if it is a file.
+        /// Gets the type of the HPI entry.
         /// </summary>
-        public int Size { get; set; }
+        public FileType Type { get; private set; }
+
+        /// <summary>
+        /// Gets the size of the entry if it is a file.
+        /// </summary>
+        public int Size { get; private set; }
+
+        /// <summary>
+        /// Opens the entry for reading.
+        /// </summary>
+        /// <returns>A stream of the file data.</returns>
+        public Stream Open()
+        {
+            if (this.Type != FileType.File)
+            {
+                throw new InvalidOperationException("This entry is not a file.");
+            }
+
+            return this.Reader.ReadFile(this.Name, this.Size);
+        }
     }
 }

@@ -96,7 +96,11 @@
             {
                 if (e.Type == HpiEntry.FileType.File)
                 {
-                    yield return new HpiEntry(HpiPath.Combine(directory, e.Name), e.Type, e.Size);
+                    yield return new HpiEntry(
+                        this,
+                        HpiPath.Combine(directory, e.Name),
+                        e.Type,
+                        e.Size);
                 }
                 else
                 {
@@ -226,6 +230,7 @@
                 }
 
                 yield return new HpiEntry(
+                    this,
                     s.ToString(),
                     type == 0 ? HpiEntry.FileType.File : HpiEntry.FileType.Directory,
                     size);
@@ -265,7 +270,7 @@
         /// The stream will terminate upon encountering a null byte.
         /// Therefore, this method is only suitable for reading text files
         /// where the null byte will not appear within the file.
-        /// For reading binary files, use <see cref="ReadFile"/>.
+        /// For reading binary files, use <see cref="ReadFile(string)"/>.
         /// </para>
         /// </summary>
         /// <param name="filename">The path of the file to read.</param>
@@ -296,6 +301,18 @@
             {
                 throw new IOException(string.Format("failed to extract {0} to {1}", filename, destname));
             }
+        }
+
+        internal Stream ReadFile(string filename, int length)
+        {
+            IntPtr ptr = NativeMethods.HPIOpenFile(this.handle, filename);
+
+            if (ptr == IntPtr.Zero)
+            {
+                throw new IOException("failed to read " + filename);
+            }
+
+            return new HpiStream(ptr, length);
         }
 
         private void Dispose(bool disposing)
