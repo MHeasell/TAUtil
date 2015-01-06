@@ -6,8 +6,8 @@
     {
         public ushort Width;
         public ushort Height;
-        public ushort XPos;
-        public ushort YPos;
+        public short XPos;
+        public short YPos;
         public byte TransparencyIndex;
         public bool Compressed;
         public ushort FramePointers;
@@ -19,8 +19,8 @@
         {
             e.Width = b.ReadUInt16();
             e.Height = b.ReadUInt16();
-            e.XPos = b.ReadUInt16();
-            e.YPos = b.ReadUInt16();
+            e.XPos = b.ReadInt16();
+            e.YPos = b.ReadInt16();
             e.TransparencyIndex = b.ReadByte();
             e.Compressed = b.ReadBoolean();
             e.FramePointers = b.ReadUInt16();
