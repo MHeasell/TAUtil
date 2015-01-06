@@ -10,12 +10,15 @@
     {
         private readonly BinaryReader reader;
 
+        private readonly IGafReaderAdapter adapter;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="GafReader"/> class.
         /// </summary>
         /// <param name="filename">The path of the GAF file to read.</param>
-        public GafReader(string filename)
-            : this(File.OpenRead(filename))
+        /// <param name="adapter">The adapter to pass read data to.</param>
+        public GafReader(string filename, IGafReaderAdapter adapter)
+            : this(File.OpenRead(filename), adapter)
         {
         }
 
@@ -23,8 +26,9 @@
         /// Initializes a new instance of the <see cref="GafReader"/> class.
         /// </summary>
         /// <param name="s">The stream to read from.</param>
-        public GafReader(Stream s)
-            : this(new BinaryReader(s))
+        /// <param name="adapter">The adapter to pass read data to.</param>
+        public GafReader(Stream s,  IGafReaderAdapter adapter)
+            : this(new BinaryReader(s), adapter)
         {
         }
 
@@ -32,9 +36,11 @@
         /// Initializes a new instance of the <see cref="GafReader"/> class.
         /// </summary>
         /// <param name="reader">The reader to read from.</param>
-        public GafReader(BinaryReader reader)
+        /// <param name="adapter">The adapter to pass read data to.</param>
+        public GafReader(BinaryReader reader, IGafReaderAdapter adapter)
         {
             this.reader = reader;
+            this.adapter = adapter;
         }
 
         /// <summary>
@@ -48,12 +54,13 @@
         /// <summary>
         /// Reads the GAF data from the input stream.
         /// </summary>
-        /// <returns>The read GAF data.</returns>
-        public GafEntry[] Read()
+        public void Read()
         {
             // read in header
             Structures.GafHeader header = new Structures.GafHeader();
             Structures.GafHeader.Read(this.reader, ref header);
+
+            this.adapter.BeginRead(header.Entries);
 
             // read in pointers to entries
             int[] pointers = new int[header.Entries];
@@ -63,14 +70,13 @@
             }
 
             // read in the actual entries themselves
-            GafEntry[] entries = new GafEntry[header.Entries];
             for (int i = 0; i < header.Entries; i++)
             {
                 this.reader.BaseStream.Seek(pointers[i], SeekOrigin.Begin);
-                entries[i] = this.ReadGafEntry();
+                this.ReadGafEntry();
             }
 
-            return entries;
+            this.adapter.EndRead();
         }
 
         /// <summary>
@@ -99,11 +105,13 @@
             }
         }
 
-        private GafEntry ReadGafEntry()
+        private void ReadGafEntry()
         {
             // read the entry header
             Structures.GafEntry entry = new Structures.GafEntry();
             Structures.GafEntry.Read(this.reader, ref entry);
+
+            this.adapter.BeginEntry(entry.Name, entry.Frames);
 
             // read in all the frame entry pointers
             Structures.GafFrameEntry[] frameEntries = new Structures.GafFrameEntry[entry.Frames];
@@ -113,60 +121,59 @@
             }
 
             // read in the corresponding frames
-            GafFrame[] frames = new GafFrame[entry.Frames];
-
             for (int i = 0; i < entry.Frames; i++)
             {
                 this.reader.BaseStream.Seek(frameEntries[i].PtrFrameTable, SeekOrigin.Begin);
-                frames[i] = this.LoadFrame();
+                this.LoadFrame();
             }
 
-            // fill in and return our output structure
-            GafEntry outEntry = new GafEntry();
-            outEntry.Name = entry.Name;
-            outEntry.Frames = frames;
-            return outEntry;
+            this.adapter.EndEntry();
         }
 
-        private GafFrame LoadFrame()
+        private void LoadFrame()
         {
             // read in the frame data table
             Structures.GafFrameData d = new Structures.GafFrameData();
             Structures.GafFrameData.Read(this.reader, ref d);
 
-            GafFrame frame = new GafFrame();
-            frame.OffsetX = d.XPos;
-            frame.OffsetY = d.YPos;
-
-            frame.Width = d.Width;
-            frame.Height = d.Height;
-
-            frame.TransparencyIndex = d.TransparencyIndex;
+            this.adapter.BeginFrame(d.XPos, d.YPos, d.Width, d.Height, d.TransparencyIndex, d.FramePointers);
 
             // read the actual frame image
             this.reader.BaseStream.Seek(d.PtrFrameData, SeekOrigin.Begin);
 
             if (d.FramePointers > 0)
             {
-                // TODO: implement support for subframes
-                frame.Width = 0;
-                frame.Height = 0;
-                frame.Data = new byte[0];
+                // read in the pointers
+                uint[] framePointers = new uint[d.FramePointers];
+                for (int i = 0; i < d.FramePointers; i++)
+                {
+                    framePointers[i] = this.reader.ReadUInt32();
+                }
+
+                // read in each frame
+                for (int i = 0; i < d.FramePointers; i++)
+                {
+                    this.reader.BaseStream.Seek(framePointers[i], SeekOrigin.Begin);
+                    this.LoadFrame();
+                }
             }
             else
             {
+                byte[] data;
                 if (d.Compressed)
                 {
                     var frameReader = new CompressedFrameReader(this.reader, d.TransparencyIndex);
-                    frame.Data = frameReader.ReadCompressedImage(d.Width, d.Height);
+                    data = frameReader.ReadCompressedImage(d.Width, d.Height);
                 }
                 else
                 {
-                    frame.Data = this.ReadUncompressedImage(d.Width, d.Height);
+                    data = this.ReadUncompressedImage(d.Width, d.Height);
                 }
+
+                this.adapter.SetFrameData(data);
             }
 
-            return frame;
+            this.adapter.EndFrame();
         }
 
         private byte[] ReadUncompressedImage(int width, int height)
