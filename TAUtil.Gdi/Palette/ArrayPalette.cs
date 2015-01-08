@@ -64,6 +64,17 @@
         }
 
         /// <summary>
+        /// Determines whether the palette contains the given color.
+        /// See <see cref="IPalette.Contains"/>.
+        /// </summary>
+        /// <param name="c">The color to look for.</param>
+        /// <returns>true if the palette contains the color, false otherwise.</returns>
+        public bool Contains(Color c)
+        {
+            return this.reversePalette.ContainsKey(c);
+        }
+
+        /// <summary>
         /// Gets the index of the color nearest to the input. See <see cref="IPalette.GetNearest"/>.
         /// </summary>
         /// <param name="color">The color to find the nearest neighbour of.</param>

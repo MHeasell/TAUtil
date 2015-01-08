@@ -38,6 +38,13 @@
         int LookUp(Color color);
 
         /// <summary>
+        /// Returns true if the palette contains the given color.
+        /// </summary>
+        /// <param name="c">The color to look for.</param>
+        /// <returns>true if the color is in the palette, false otherwise.</returns>
+        bool Contains(Color c);
+
+        /// <summary>
         /// Gets the index of the color nearest to the specified color.
         /// </summary>
         /// <param name="color">The color to find the nearest neighbour of.</param>
