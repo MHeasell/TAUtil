@@ -73,6 +73,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sct\SctWriter.cs" />
     <Compile Include="TdfParseException.cs" />
+    <Compile Include="Tdf\TdfConvert.cs" />
     <Compile Include="Tdf\TdfLexingReader.cs" />
     <Compile Include="Tdf\ITdfNodeAdapter.cs" />
     <Compile Include="Tdf\TdfNode.cs" />
