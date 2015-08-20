@@ -1,7 +1,6 @@
 ﻿namespace TAUtil
 {
     using System;
-    using System.Diagnostics;
 
     using TAUtil.Tnt;
 
@@ -10,7 +9,12 @@
         public static string ConvertChars(byte[] data)
         {
             int i = Array.IndexOf<byte>(data, 0);
-            Debug.Assert(i != -1, "null terminator not found");
+
+            if (i == -1)
+            {
+                throw new ArgumentException("Data is not null-terminated");
+            }
+
             return System.Text.Encoding.ASCII.GetString(data, 0, i);
         }
 
