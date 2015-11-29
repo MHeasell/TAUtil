@@ -45,12 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Hpi\HpiEntry.cs" />
-    <Compile Include="Hpi\HpiPath.cs" />
-    <Compile Include="Hpi\HpiReader.cs" />
-    <Compile Include="Hpi\HpiStream.cs" />
-    <Compile Include="Hpi\HpiWriter.cs" />
-    <Compile Include="Hpi\NativeMethods.cs" />
+    <Compile Include="HpiEntry.cs" />
+    <Compile Include="HpiPath.cs" />
+    <Compile Include="HpiReader.cs" />
+    <Compile Include="HpiStream.cs" />
+    <Compile Include="HpiWriter.cs" />
+    <Compile Include="NativeMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
