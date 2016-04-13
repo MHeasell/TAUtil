@@ -23,24 +23,26 @@
             int realHeight = 0;
             int realWidth = 0;
 
-            for (int y = 0; y < height; y++)
+            // find the real width by scanning across from the right
+            // until we encounter non-void data.
+            for (int x = (width - 1); x >= 0; x--)
             {
-                if (data[y * width] == TntConstants.MinimapVoidByte)
+                if (data[x] != TntConstants.MinimapVoidByte)
                 {
+                    realWidth = x + 1;
                     break;
                 }
-
-                realHeight++;
             }
 
-            for (int x = 0; x < width; x++)
+            // Find the real height by scanning upwards from the bottom
+            // until we encounter non-void data.
+            for (int y = (height - 1); y >= 0; y--)
             {
-                if (data[x] == TntConstants.MinimapVoidByte)
+                if (data[y * width] != TntConstants.MinimapVoidByte)
                 {
+                    realHeight = y + 1;
                     break;
                 }
-
-                realWidth++;
             }
 
             return new Size(realWidth, realHeight);
