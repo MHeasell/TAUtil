@@ -74,6 +74,19 @@
         }
 
         /// <summary>
+        /// Attempts to convert the given string to an integer.
+        /// If parsing succeeds, result will contain the converted value.
+        /// Otherwise, output will be set to 0.
+        /// </summary>
+        /// <param name="s">The string to convert.</param>
+        /// <param name="result">The variable into which the parsed int will be placed.</param>
+        /// <returns>true if conversion succeeded, otherwise false.</returns>
+        public static bool TryToInt32(string s, out int result)
+        {
+            return int.TryParse(s, out result);
+        }
+
+        /// <summary>
         /// Converts the given string representation of a decimal number
         /// to a double-precision floating-point value.
         /// </summary>
