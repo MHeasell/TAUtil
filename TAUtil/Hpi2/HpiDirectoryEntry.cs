@@ -5,6 +5,8 @@ namespace TAUtil.Hpi2
 {
     internal struct HpiDirectoryEntry
     {
+        public const int StructureSizeInBytes = 9;
+
         /// <summary>
         /// Pointer to a null-terminated string containing the entry name.
         /// </summary>

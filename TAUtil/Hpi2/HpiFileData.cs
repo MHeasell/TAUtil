@@ -18,13 +18,13 @@ namespace TAUtil.Hpi2
         /// <summary>
         /// 0 for no compression, 1 for LZ77 compression, 2 for ZLib compression.
         /// </summary>
-        public uint CompressionScheme;
+        public byte CompressionScheme;
 
         public static void Read(BinaryReader reader, out HpiFileData f)
         {
             f.DataOffset = reader.ReadUInt32();
             f.FileSize = reader.ReadUInt32();
-            f.CompressionScheme = reader.ReadUInt32();
+            f.CompressionScheme = reader.ReadByte();
         }
     }
 }

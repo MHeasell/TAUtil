@@ -1,6 +1,7 @@
 ﻿namespace TAUtil
 {
     using System;
+    using System.Collections.Generic;
     using System.IO;
 
     using TAUtil.Tnt;
@@ -21,7 +22,16 @@
 
         public static string ReadNullTerminatedString(BinaryReader reader)
         {
-            throw new NotImplementedException();
+            var bytes = new List<byte>();
+            while (true)
+            {
+                byte b = reader.ReadByte();
+                if (b == 0)
+                {
+                    return System.Text.Encoding.ASCII.GetString(bytes.ToArray());
+                }
+                bytes.Add(b);
+            }
         }
 
         public static Size GetMinimapActualSize(byte[] data, int width, int height)

@@ -88,11 +88,12 @@
 
         private List<DirectoryEntry> ConvertDirectoryEntries(HpiDirectoryData directory, BinaryReader reader)
         {
-            reader.BaseStream.Seek(directory.EntryListOffset, SeekOrigin.Begin);
-
             var v = new List<DirectoryEntry>((int)directory.NumberOfEntries);
             for (int i = 0; i < directory.NumberOfEntries; ++i)
             {
+                var seekOffset = directory.EntryListOffset + (i * HpiDirectoryEntry.StructureSizeInBytes);
+                reader.BaseStream.Seek(seekOffset, SeekOrigin.Begin);
+
                 HpiDirectoryEntry entry;
                 HpiDirectoryEntry.Read(reader, out entry);
                 v.Add(ConvertDirectoryEntry(entry, reader));
@@ -108,14 +109,15 @@
 
             if (entry.IsDirectory != 0)
             {
-                HpiDirectoryData d;
                 reader.BaseStream.Seek(entry.DataOffset, SeekOrigin.Begin);
+                HpiDirectoryData d;
                 HpiDirectoryData.Read(reader, out d);
                 var subEntries = ConvertDirectoryEntries(d, reader);
                 return new DirectoryInfo(name, subEntries);
             }
             else
             {
+                reader.BaseStream.Seek(entry.DataOffset, SeekOrigin.Begin);
                 HpiFileData f;
                 HpiFileData.Read(reader, out f);
                 return ConvertFile(name, f);
