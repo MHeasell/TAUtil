@@ -86,6 +86,37 @@
             this.root = new HpiArchive.DirectoryInfo(string.Empty, ConvertDirectoryEntries(directory, dataReader));
         }
 
+        public HpiArchive(string filename)
+            : this(new BinaryReader(File.OpenRead(filename)))
+        {
+        }
+
+        private static byte TransformKey(byte key)
+        {
+            return (byte)((key << 2) | (key >> 6));
+        }
+
+        static private void ReadAndDecrypt(BinaryReader reader, byte key, byte[] buffer, int offset, int size)
+        {
+            var seed = (byte)reader.BaseStream.Position;
+            var bytesRead = reader.Read(buffer, offset, size);
+            Decrypt(key, seed, buffer, offset, bytesRead);
+        }
+
+        private static void Decrypt(byte key, byte seed, byte[] buffer, int offset, int size)
+        {
+            if (key == 0)
+            {
+                return;
+            }
+
+            for (int i = 0; i < size; ++i)
+            {
+                var pos = seed + i;
+                buffer[offset + i] = (byte)((pos ^ key) ^ buffer[offset + i]);
+            }
+        }
+
         private List<DirectoryEntry> ConvertDirectoryEntries(HpiDirectoryData directory, BinaryReader reader)
         {
             var v = new List<DirectoryEntry>((int)directory.NumberOfEntries);
@@ -127,37 +158,6 @@
         private DirectoryEntry ConvertFile(string name, HpiFileData f)
         {
             return new FileInfo(name, (int)f.FileSize, (int)f.DataOffset, (CompressionScheme)f.CompressionScheme);
-        }
-
-        public HpiArchive(string filename)
-            : this(new BinaryReader(File.OpenRead(filename)))
-        {
-        }
-
-        private static byte TransformKey(byte key)
-        {
-            return (byte)((key << 2) | (key >> 6));
-        }
-
-        static private void ReadAndDecrypt(BinaryReader reader, byte key, byte[] buffer, int offset, int size)
-        {
-            var seed = (byte)reader.BaseStream.Position;
-            var bytesRead = reader.Read(buffer, offset, size);
-            Decrypt(key, seed, buffer, offset, bytesRead);
-        }
-
-        private static void Decrypt(byte key, byte seed, byte[] buffer, int offset, int size)
-        {
-            if (key == 0)
-            {
-                return;
-            }
-
-            for (int i = 0; i < size; ++i)
-            {
-                var pos = seed + i;
-                buffer[offset + i] = (byte)((pos ^ key) ^ buffer[offset + i]);
-            }
         }
     }
 }
