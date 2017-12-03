@@ -5,6 +5,7 @@
     internal struct HpiChunk
     {
         public const uint MagicNumber = 0x48535153;
+        public const int StructureSize = 19;
 
         public uint Marker;
         public byte Version;

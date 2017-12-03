@@ -95,6 +95,11 @@
         {
         }
 
+        public DirectoryInfo GetRoot()
+        {
+            return root;
+        }
+
         /// <summary>
         /// Returns the info about the file at the given path,
         /// or null if no such file exists.
@@ -132,13 +137,19 @@
             reader.BaseStream.Seek(file.Offset, SeekOrigin.Begin);
 
             // skip chunk sizes
-            reader.BaseStream.Seek(chunkCount * sizeof(UInt32), SeekOrigin.Current);
+            for (int i = 0; i < chunkCount; ++i)
+            {
+                reader.ReadUInt32();
+            }
 
             int bufferOffset = 0;
             for (int i = 0; i < chunkCount; ++i)
             {
+                var encryptedChunk = new byte[HpiChunk.StructureSize];
+                ReadAndDecrypt(reader, decryptionKey, encryptedChunk, 0, HpiChunk.StructureSize);
+
                 HpiChunk chunkHeader;
-                HpiChunk.Read(reader, out chunkHeader);
+                HpiChunk.Read(new BinaryReader(new MemoryStream(encryptedChunk)), out chunkHeader);
                 if (chunkHeader.Marker != HpiChunk.MagicNumber)
                 {
                     throw new Exception("Invalid chunk header");
@@ -217,8 +228,8 @@
                     else // next byte points into the sliding window
                     {
                         var packedData = reader.ReadUInt16();
-                        var windowOffset = packedData >> 4;
-                        if (windowOffset == 0)
+                        var windowReadPos = packedData >> 4;
+                        if (windowReadPos == 0)
                         {
                             return;
                         }
@@ -226,9 +237,10 @@
                         var count = (packedData & 0x0F) + 2;
                         for (int x = 0; x < count; ++x)
                         {
-                            writer.Write(window[windowOffset]);
-                            window[windowPos] = window[windowOffset];
-                            windowOffset = (windowOffset + 1) & 0xFFF;
+                            writer.Write(window[windowReadPos]);
+                            window[windowPos] = window[windowReadPos];
+                            windowReadPos = (windowReadPos + 1) & 0xFFF;
+                            windowPos = (windowPos + 1) & 0xFFF;
                         }
                     }
 
