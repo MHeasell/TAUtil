@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HpiEntry.cs" />
-    <Compile Include="HpiPath.cs" />
     <Compile Include="HpiReader.cs" />
     <Compile Include="HpiStream.cs" />
     <Compile Include="HpiWriter.cs" />
@@ -60,6 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AssemblyInfo.cs.tmpl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TAUtil\TAUtil.csproj">
+      <Project>{71ae8770-7794-4cf8-88f1-1d7429f24eb4}</Project>
+      <Name>TAUtil</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

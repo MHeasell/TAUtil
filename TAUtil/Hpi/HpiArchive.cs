@@ -1,11 +1,12 @@
-﻿namespace TAUtil.Hpi2
+﻿namespace TAUtil.Hpi
 {
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.IO.Compression;
+    using System.Linq;
 
-    public class HpiArchive
+    public class HpiArchive : IDisposable
     {
         public enum CompressionScheme
         {
@@ -16,11 +17,13 @@
 
         public abstract class DirectoryEntry
         {
+            public string FullPath;
             public string Name;
 
-            public DirectoryEntry(string name)
+            public DirectoryEntry(string name, string fullPath)
             {
                 Name = name;
+                FullPath = fullPath;
             }
         }
 
@@ -28,7 +31,7 @@
         {
             public List<DirectoryEntry> Entries;
 
-            public DirectoryInfo(string name, List<DirectoryEntry> entries) : base(name)
+            public DirectoryInfo(string name, string fullPath, List<DirectoryEntry> entries) : base(name, fullPath)
             {
                 Entries = entries;
             }
@@ -40,7 +43,7 @@
             public int Offset;
             public CompressionScheme CompressionScheme;
 
-            public FileInfo(string name, int size, int offset, CompressionScheme compressionScheme) : base(name)
+            public FileInfo(string name, string fullPath, int size, int offset, CompressionScheme compressionScheme) : base(name, fullPath)
             {
                 Size = size;
                 Offset = offset;
@@ -54,7 +57,7 @@
 
         private BinaryReader reader;
 
-        public HpiArchive(BinaryReader r)
+        private HpiArchive(BinaryReader r)
         {
             HpiVersion v;
             HpiVersion.Read(r, out v);
@@ -86,18 +89,71 @@
             HpiDirectoryData directory;
             HpiDirectoryData.Read(dataReader, out directory);
 
-            this.root = new HpiArchive.DirectoryInfo(string.Empty, ConvertDirectoryEntries(directory, dataReader));
+            this.root = new DirectoryInfo(string.Empty, string.Empty, ConvertDirectoryEntries(directory, dataReader, string.Empty));
             this.reader = r;
         }
 
         public HpiArchive(string filename)
             : this(new BinaryReader(File.OpenRead(filename)))
         {
+            this.FileName = filename;
+        }
+
+        public string FileName { get; }
+
+        public void Dispose()
+        {
+            Dispose(true);
         }
 
         public DirectoryInfo GetRoot()
         {
             return root;
+        }
+
+        public IEnumerable<FileInfo> GetFilesRecursive()
+        {
+            return this.GetFilesRecursive(root);
+        }
+
+        public IEnumerable<FileInfo> GetFilesRecursive(string directoryName)
+        {
+            var dir = this.FindDirectory(directoryName);
+            if (dir == null)
+            {
+                return Enumerable.Empty<FileInfo>();
+            }
+
+            return this.GetFilesRecursive(dir);
+        }
+
+        public IEnumerable<FileInfo> GetFilesRecursive(DirectoryInfo dir)
+        {
+            return dir.Entries.SelectMany(x =>
+            {
+                if (x is FileInfo)
+                {
+                    return new FileInfo[] { (FileInfo)x };
+                }
+
+                if (x is DirectoryInfo)
+                {
+                    return this.GetFilesRecursive((DirectoryInfo)x);
+                }
+
+                throw new Exception("Unknown directory entry class");
+            });
+        }
+
+        public IEnumerable<FileInfo> GetFiles(string directoryName)
+        {
+            var dir = this.FindDirectory(directoryName);
+            if (dir == null)
+            {
+                return Enumerable.Empty<FileInfo>();
+            }
+
+            return dir.Entries.Where(x => x is FileInfo).Select(x => (FileInfo)x);
         }
 
         /// <summary>
@@ -129,6 +185,37 @@
             }
 
             return FindFileInner(currentDir, components[components.Length - 1]);
+        }
+
+        /// <summary>
+        /// Returns the info about the directory at the given path,
+        /// or null if no such directory exists.
+        /// </summary>
+        public DirectoryInfo FindDirectory(string path)
+        {
+            var components = path.Split(new[] { HpiPath.DirectorySeparatorChar, HpiPath.AltDirectorySeparatorChar });
+
+            var currentDir = root;
+
+            for (int i = 0; i < components.Length; ++i)
+            {
+                var c = components[i];
+                var entry = currentDir.Entries.Find(x => string.Equals(x.Name, c, StringComparison.OrdinalIgnoreCase));
+                if (entry == null)
+                {
+                    return null;
+                }
+
+                var d = entry as DirectoryInfo;
+                if (d == null)
+                {
+                    return null;
+                }
+
+                currentDir = d;
+            }
+
+            return currentDir;
         }
 
         public void Extract(FileInfo file, byte[] buffer)
@@ -196,9 +283,20 @@
             }
         }
 
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                reader.Dispose();
+            }
+        }
+
         private static void DecompressZlib(byte[] input, int inputOffset, int inputSize, byte[] output, int outputOffset, int outputSize)
         {
-            var inputStream = new DeflateStream(new MemoryStream(input, inputOffset, inputSize), CompressionMode.Decompress);
+            // We skip the first two bytes here.
+            // The first two bytes are a zlib header and are not part of the deflate spec.
+            // If we don't do this, DeflateStream will blow up when it tries to read the underlying stream.
+            var inputStream = new DeflateStream(new MemoryStream(input, inputOffset + 2, inputSize - 2), CompressionMode.Decompress);
             var outputStream = new MemoryStream(output, outputOffset, outputSize);
             inputStream.CopyTo(outputStream);
         }
@@ -306,7 +404,7 @@
             return entry as FileInfo;
         }
 
-        private List<DirectoryEntry> ConvertDirectoryEntries(HpiDirectoryData directory, BinaryReader reader)
+        private List<DirectoryEntry> ConvertDirectoryEntries(HpiDirectoryData directory, BinaryReader reader, string parentPath)
         {
             var v = new List<DirectoryEntry>((int)directory.NumberOfEntries);
             for (int i = 0; i < directory.NumberOfEntries; ++i)
@@ -316,37 +414,38 @@
 
                 HpiDirectoryEntry entry;
                 HpiDirectoryEntry.Read(reader, out entry);
-                v.Add(ConvertDirectoryEntry(entry, reader));
+                v.Add(ConvertDirectoryEntry(entry, reader, parentPath));
             }
 
             return v;
         }
 
-        private DirectoryEntry ConvertDirectoryEntry(HpiDirectoryEntry entry, BinaryReader reader)
+        private DirectoryEntry ConvertDirectoryEntry(HpiDirectoryEntry entry, BinaryReader reader, string parentPath)
         {
             reader.BaseStream.Seek(entry.NameOffset, SeekOrigin.Begin);
             var name = Util.ReadNullTerminatedString(reader);
+            var fullPath = HpiPath.Combine(parentPath, name);
 
             if (entry.IsDirectory != 0)
             {
                 reader.BaseStream.Seek(entry.DataOffset, SeekOrigin.Begin);
                 HpiDirectoryData d;
                 HpiDirectoryData.Read(reader, out d);
-                var subEntries = ConvertDirectoryEntries(d, reader);
-                return new DirectoryInfo(name, subEntries);
+                var subEntries = ConvertDirectoryEntries(d, reader, fullPath);
+                return new DirectoryInfo(name, fullPath, subEntries);
             }
             else
             {
                 reader.BaseStream.Seek(entry.DataOffset, SeekOrigin.Begin);
                 HpiFileData f;
                 HpiFileData.Read(reader, out f);
-                return ConvertFile(name, f);
+                return ConvertFile(name, fullPath, f);
             }
         }
 
-        private DirectoryEntry ConvertFile(string name, HpiFileData f)
+        private DirectoryEntry ConvertFile(string name, string fullPath, HpiFileData f)
         {
-            return new FileInfo(name, (int)f.FileSize, (int)f.DataOffset, (CompressionScheme)f.CompressionScheme);
+            return new FileInfo(name, fullPath, (int)f.FileSize, (int)f.DataOffset, (CompressionScheme)f.CompressionScheme);
         }
     }
 }

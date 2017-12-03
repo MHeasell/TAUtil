@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace TAUtil.Hpi2
+namespace TAUtil.Hpi
 {
     internal struct HpiFileData
     {

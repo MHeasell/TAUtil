@@ -1,4 +1,4 @@
-﻿namespace TAUtil.Hpi2
+﻿namespace TAUtil.Hpi
 {
     using System.IO;
 
