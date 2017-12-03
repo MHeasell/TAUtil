@@ -54,6 +54,14 @@
     <Compile Include="3do\Vector.cs" />
     <Compile Include="Gaf\CompressedFrameReader.cs" />
     <Compile Include="Gaf\IGafReaderAdapter.cs" />
+    <Compile Include="Hpi\HpiArchive.cs" />
+    <Compile Include="Hpi\HpiChunk.cs" />
+    <Compile Include="Hpi\HpiDirectoryData.cs" />
+    <Compile Include="Hpi\HpiDirectoryEntry.cs" />
+    <Compile Include="Hpi\HpiFileData.cs" />
+    <Compile Include="Hpi\HpiHeader.cs" />
+    <Compile Include="Hpi\HpiPath.cs" />
+    <Compile Include="Hpi\HpiVersion.cs" />
     <Compile Include="MapConstants.cs" />
     <Compile Include="Gaf\Structures\GafEntry.cs" />
     <Compile Include="Gaf\GafReader.cs" />

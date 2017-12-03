@@ -1,4 +1,4 @@
-﻿namespace TAUtil.Hpi
+﻿namespace TAUtil.HpiUtil
 {
     using System;
     using System.Runtime.InteropServices;
