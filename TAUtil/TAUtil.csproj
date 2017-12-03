@@ -60,6 +60,7 @@
     <Compile Include="Hpi2\HpiDirectoryEntry.cs" />
     <Compile Include="Hpi2\HpiFileData.cs" />
     <Compile Include="Hpi2\HpiHeader.cs" />
+    <Compile Include="Hpi2\HpiPath.cs" />
     <Compile Include="Hpi2\HpiVersion.cs" />
     <Compile Include="MapConstants.cs" />
     <Compile Include="Gaf\Structures\GafEntry.cs" />
