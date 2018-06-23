@@ -220,66 +220,18 @@
 
         public void Extract(FileInfo file, byte[] buffer)
         {
-            var chunkCount = (file.Size / 65536) + (file.Size % 65536 == 0 ? 0 : 1);
-            reader.BaseStream.Seek(file.Offset, SeekOrigin.Begin);
-
-            // skip chunk sizes
-            for (int i = 0; i < chunkCount; ++i)
+            switch (file.CompressionScheme)
             {
-                reader.ReadUInt32();
-            }
-
-            int bufferOffset = 0;
-            for (int i = 0; i < chunkCount; ++i)
-            {
-                var encryptedChunk = new byte[HpiChunk.StructureSize];
-                ReadAndDecrypt(reader, decryptionKey, encryptedChunk, 0, HpiChunk.StructureSize);
-
-                HpiChunk chunkHeader;
-                HpiChunk.Read(new BinaryReader(new MemoryStream(encryptedChunk)), out chunkHeader);
-                if (chunkHeader.Marker != HpiChunk.MagicNumber)
-                {
-                    throw new Exception("Invalid chunk header");
-                }
-
-                var chunkBuffer = new byte[chunkHeader.CompressedSize];
-                ReadAndDecrypt(reader, decryptionKey, chunkBuffer, 0, (int)chunkHeader.CompressedSize);
-
-                var checksum = ComputeChecksum(chunkBuffer, 0, (int)chunkHeader.CompressedSize);
-                if (checksum != chunkHeader.Checksum)
-                {
-                    throw new Exception("Invalid chunk checksum");
-                }
-
-                if (chunkHeader.Encrypted != 0)
-                {
-                    DecryptInner(chunkBuffer, 0, (int)chunkHeader.CompressedSize);
-                }
-
-                switch (chunkHeader.CompressionScheme)
-                {
-                    case 0: // no compression
-                        if (chunkHeader.CompressedSize != chunkHeader.DecompressedSize)
-                        {
-                            throw new Exception("Uncompressed chunk has different decompressed and compressed sizes");
-                        }
-                        Array.Copy(chunkBuffer, 0, buffer, bufferOffset, chunkHeader.CompressedSize);
-                        bufferOffset += (int)chunkHeader.DecompressedSize;
-                        break;
-
-                    case 1: // LZ77 compression
-                        DecompressLZ77(chunkBuffer, 0, (int)chunkHeader.CompressedSize, buffer, bufferOffset, (int)chunkHeader.DecompressedSize);
-                        bufferOffset += (int)chunkHeader.DecompressedSize;
-                        break;
-
-                    case 2: // ZLib compression
-                        DecompressZlib(chunkBuffer, 0, (int)chunkHeader.CompressedSize, buffer, bufferOffset, (int)chunkHeader.DecompressedSize);
-                        bufferOffset += (int)chunkHeader.DecompressedSize;
-                        break;
-
-                    default:
-                        throw new Exception("Invalid compression scheme");
-                }
+                case CompressionScheme.None:
+                    reader.BaseStream.Seek(file.Offset, SeekOrigin.Begin);
+                    ReadAndDecrypt(reader, decryptionKey, buffer, 0, file.Size);
+                    break;
+                case CompressionScheme.LZ77:
+                case CompressionScheme.ZLib:
+                    ExtractCompressed(file, buffer);
+                    break;
+                default:
+                    throw new Exception("Invalid compression scheme in file entry");
             }
         }
 
@@ -392,6 +344,72 @@
                 buffer[offset + i] = (byte)((pos ^ key) ^ buffer[offset + i]);
             }
         }
+
+        public void ExtractCompressed(FileInfo file, byte[] buffer)
+        {
+            var chunkCount = (file.Size / 65536) + (file.Size % 65536 == 0 ? 0 : 1);
+            reader.BaseStream.Seek(file.Offset, SeekOrigin.Begin);
+
+            // skip chunk sizes
+            for (int i = 0; i < chunkCount; ++i)
+            {
+                reader.ReadUInt32();
+            }
+
+            int bufferOffset = 0;
+            for (int i = 0; i < chunkCount; ++i)
+            {
+                var encryptedChunk = new byte[HpiChunk.StructureSize];
+                ReadAndDecrypt(reader, decryptionKey, encryptedChunk, 0, HpiChunk.StructureSize);
+
+                HpiChunk chunkHeader;
+                HpiChunk.Read(new BinaryReader(new MemoryStream(encryptedChunk)), out chunkHeader);
+                if (chunkHeader.Marker != HpiChunk.MagicNumber)
+                {
+                    throw new Exception("Invalid chunk header");
+                }
+
+                var chunkBuffer = new byte[chunkHeader.CompressedSize];
+                ReadAndDecrypt(reader, decryptionKey, chunkBuffer, 0, (int)chunkHeader.CompressedSize);
+
+                var checksum = ComputeChecksum(chunkBuffer, 0, (int)chunkHeader.CompressedSize);
+                if (checksum != chunkHeader.Checksum)
+                {
+                    throw new Exception("Invalid chunk checksum");
+                }
+
+                if (chunkHeader.Encrypted != 0)
+                {
+                    DecryptInner(chunkBuffer, 0, (int)chunkHeader.CompressedSize);
+                }
+
+                switch (chunkHeader.CompressionScheme)
+                {
+                    case 0: // no compression
+                        if (chunkHeader.CompressedSize != chunkHeader.DecompressedSize)
+                        {
+                            throw new Exception("Uncompressed chunk has different decompressed and compressed sizes");
+                        }
+                        Array.Copy(chunkBuffer, 0, buffer, bufferOffset, chunkHeader.CompressedSize);
+                        bufferOffset += (int)chunkHeader.DecompressedSize;
+                        break;
+
+                    case 1: // LZ77 compression
+                        DecompressLZ77(chunkBuffer, 0, (int)chunkHeader.CompressedSize, buffer, bufferOffset, (int)chunkHeader.DecompressedSize);
+                        bufferOffset += (int)chunkHeader.DecompressedSize;
+                        break;
+
+                    case 2: // ZLib compression
+                        DecompressZlib(chunkBuffer, 0, (int)chunkHeader.CompressedSize, buffer, bufferOffset, (int)chunkHeader.DecompressedSize);
+                        bufferOffset += (int)chunkHeader.DecompressedSize;
+                        break;
+
+                    default:
+                        throw new Exception("Invalid compression scheme");
+                }
+            }
+        }
+
 
         private FileInfo FindFileInner(DirectoryInfo currentDir, string v)
         {
