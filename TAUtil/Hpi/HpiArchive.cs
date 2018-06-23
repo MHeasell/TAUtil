@@ -372,7 +372,7 @@
             return (byte)((key << 2) | (key >> 6));
         }
 
-        static private void ReadAndDecrypt(BinaryReader reader, byte key, byte[] buffer, int offset, int size)
+        private static void ReadAndDecrypt(BinaryReader reader, byte key, byte[] buffer, int offset, int size)
         {
             var seed = (byte)reader.BaseStream.Position;
             var bytesRead = reader.Read(buffer, offset, size);
