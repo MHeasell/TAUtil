@@ -7,8 +7,8 @@
     <ProjectGuid>{A13082E4-3557-4666-BF02-B376C9907B69}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TAUtil.Hpi</RootNamespace>
-    <AssemblyName>TAUtil.Hpi</AssemblyName>
+    <RootNamespace>TAUtil.HpiUtil</RootNamespace>
+    <AssemblyName>TAUtil.HpiUtil</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -22,7 +22,7 @@
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <PlatformTarget>x86</PlatformTarget>
-    <DocumentationFile>bin\Debug\TAUtil.Hpi.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\TAUtil.HpiUtil.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <PlatformTarget>x86</PlatformTarget>
-    <DocumentationFile>bin\Release\TAUtil.Hpi.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\TAUtil.HpiUtil.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
