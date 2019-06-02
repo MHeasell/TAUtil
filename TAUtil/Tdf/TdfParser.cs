@@ -129,6 +129,13 @@
             {
                 this.Block();
             }
+            else if (this.Accept(';'))
+            {
+                // Empty statement (i.e. terminator that terminates nothing).
+                // Strictly this isn't really valid,
+                // but some files in the wild do have this
+                // and we need to cope with them.
+            }
             else
             {
                 this.Property();

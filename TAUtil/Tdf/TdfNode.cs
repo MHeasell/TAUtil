@@ -83,6 +83,40 @@
             this.WriteTdf(wr, 0);
             wr.Flush();
         }
+        public bool ContentsEqual(TdfNode other)
+        {
+            if (!string.Equals(this.Name, other.Name, StringComparison.OrdinalIgnoreCase))
+            {
+                return false;
+            }
+            if (this.Keys.Count != other.Keys.Count)
+            {
+                return false;
+            }
+
+            if (this.Entries.Count != other.Entries.Count)
+            {
+                return false;
+            }
+
+            foreach (var entry in this.Entries)
+            {
+                if (!other.Entries.TryGetValue(entry.Key, out var value) || entry.Value != value)
+                {
+                    return false;
+                }
+            }
+
+            foreach (var entry in this.Keys)
+            {
+                if (!other.Keys.TryGetValue(entry.Key, out var value) || !entry.Value.ContentsEqual(value))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
 
         private void WriteTdf(StreamWriter writer, int depth)
         {
