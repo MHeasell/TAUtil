@@ -14,7 +14,7 @@
 
             if (i == -1)
             {
-                throw new ArgumentException("Data is not null-terminated");
+                i = data.Length;
             }
 
             return System.Text.Encoding.ASCII.GetString(data, 0, i);
